@@ -18,14 +18,13 @@ class Database:
         c.execute(command)
         conn.commit()
 
-
     @staticmethod
     def checkField(key, field):
         #   open db connection
         conn = sqlite3.connect(Database.databasepath, detect_types=sqlite3.PARSE_COLNAMES)
         c = conn.cursor()
 
-        command = "SELECT '%s' FROM users WHERE id='%s'" % (field, str(key))
+        command = "SELECT '%s' FROM users WHERE username_telegram='%s'" % (field, str(key))
         c.execute(command)
         if c.fetchone() == None:
             return False
@@ -47,9 +46,9 @@ class Database:
         conn = sqlite3.connect(Database.databasepath, detect_types=sqlite3.PARSE_COLNAMES)
         c = conn.cursor()
 
-        command = "SELECT " + field + " FROM users WHERE chatid=" + str(key)
+        command = "SELECT " + field + " FROM users WHERE username_telegram=" + str(key)
         c.execute(command)
-        return Database.c.fetchone()[0]
+        return c.fetchone()[0]
 
     @staticmethod
     def deleteRecord(key):

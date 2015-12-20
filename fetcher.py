@@ -6,12 +6,10 @@ import re
 class Fetcher:
 
     @staticmethod
-    def fetchUpdates():
+    def fetchUpdates(user, password):
 
         regex = '<td align="Left" width="600">.*<\/td>'
         url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=FOTF010008"
-        user = "00692"
-        password = "----"
 
         browser = mechanize.Browser()
         browser.open(url)
