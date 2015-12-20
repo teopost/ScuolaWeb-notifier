@@ -6,24 +6,26 @@ import re
 class Fetcher:
 
     @staticmethod
-    def fetchUpdates(user, password):
+    def fetchUpdates(schoolcode, user, password):
+        try:
+            regex = '<td align="Left" width="600">.*<\/td>'
+            url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
 
-        regex = '<td align="Left" width="600">.*<\/td>'
-        url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=FOTF010008"
+            browser = mechanize.Browser()
+            browser.open(url)
+            browser.select_form(name="ctl06")
 
-        browser = mechanize.Browser()
-        browser.open(url)
-        browser.select_form(name="ctl06")
+            browser.form["LoginControl1$txtCodUser"] = user
+            browser.form["LoginControl1$txtPassword"] = password
 
-        browser.form["LoginControl1$txtCodUser"] = user
-        browser.form["LoginControl1$txtPassword"] = password
+            page = browser.submit()
+            text = page.read()
 
-        page = browser.submit()
-        text = page.read()
-
-        #trova tutte le occorrenze nella pagina secondo la espressione regolare
-        toret=[]
-        for r in re.findall(regex,text):
-            temp = r[29:]
-            toret.append(temp[:-5])
-        return toret
+            #   trova tutte le occorrenze nella pagina secondo la espressione regolare
+            toret=[]
+            for r in re.findall(regex, text):
+                temp = r[29:]
+                toret.append(temp[:-5])
+            return toret
+        except mechanize.ControlNotFoundError:
+            return []

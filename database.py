@@ -6,17 +6,18 @@ class Database:
 
     #   DATABASE MANAGEMENT
     @staticmethod
-    def addRecord(username_telegram, username_registro, password):
+    def addRecord(school_code, username_telegram, username_registro, password):
         #   open db connection
         conn = sqlite3.connect(Database.databasepath, detect_types=sqlite3.PARSE_COLNAMES)
         c = conn.cursor()
         #   put the values into the db
-        values = "('%s', '%s', '%s')" % (username_telegram, username_registro, password)
-        command = "INSERT into users(username_telegram, username_registro, pass) VALUES" + values
+        values = "('%s', '%s', '%s', '%s')" % (school_code, username_telegram, username_registro, password)
+        command = "INSERT into users(school_code, username_telegram, username_registro, pass) VALUES" + values
         print(command)
         c.execute("delete from users where username_telegram='%s'" % (username_telegram))   #   if the user already made an accout, overwrite
         c.execute(command)
         conn.commit()
+        conn.close()
 
     @staticmethod
     def checkField(key, field):
