@@ -43,13 +43,17 @@ class Database:
 
     @staticmethod
     def getField(key, field):
+        try:
         #   open db connection
-        conn = sqlite3.connect(Database.databasepath, detect_types=sqlite3.PARSE_COLNAMES)
-        c = conn.cursor()
+            conn = sqlite3.connect(Database.databasepath, detect_types=sqlite3.PARSE_COLNAMES)
+            c = conn.cursor()
 
-        command = "SELECT " + field + " FROM users WHERE username_telegram=" + str(key)
-        c.execute(command)
-        return c.fetchone()[0]
+            command = "SELECT " + field + " FROM users WHERE username_telegram=" + str(key)
+            c.execute(command)
+            toret = c.fetchone()[0]
+            return toret
+        except Exception:
+            raise Exception
 
     @staticmethod
     def deleteRecord(key):

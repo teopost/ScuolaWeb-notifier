@@ -40,7 +40,7 @@ def compare(schoolcode, user, password):
             else:
                 return "Nessun nuovo voto."
         else:
-            return  "Errore durente l'autenticazione"
+            return  "Errore durante l'autenticazione"
 """
 
 
@@ -53,21 +53,23 @@ def news(bot, update):
     #   news(), callback del comando /news.
     #   news() scarica gli aggiornamenti con genews(), fa il confronto con compare();
     #   infine un messaggio contenente gli aggiornamenti, viene inviato all'utente che ne ha fatto richiesta.
-    #print("command /news from:" + '%s') % (str(update.message.from_user["id"]))
-    user = database.Database.getField(update.message.from_user["id"], "username_registro")
-    password = database.Database.getField(update.message.from_user["id"], "pass")
-    schoolcode = database.Database.getField(update.message.from_user["id"], "school_code")
-    bot.sendMessage(chat_id=update.message.chat_id, text="Stai per ricevere le ultime notizie sul tuo registro.")
-    updateslist = fetcher.Fetcher.fetchUpdates(schoolcode, user, password)
-    messagecontent = ""
-    if updateslist:
-        for u in updateslist:
-            messagecontent+=u
-            messagecontent+="\n\n"
-        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
-    else:
-        messagecontent="Errore durante l'autenticazione."
-        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+    try:
+        user = database.Database.getField(update.message.from_user["id"], "username_registro")
+        password = database.Database.getField(update.message.from_user["id"], "pass")
+        schoolcode = database.Database.getField(update.message.from_user["id"], "school_code")
+        bot.sendMessage(chat_id=update.message.chat_id, text="Stai per ricevere le ultime notizie sul tuo registro.")
+        updateslist = fetcher.Fetcher.fetchUpdates(schoolcode, user, password)
+        messagecontent = ""
+        if updateslist:
+            for u in updateslist:
+                messagecontent+=u
+                messagecontent+="\n\n"
+            bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+        else:
+            messagecontent="Errore durante l'autenticazione."
+            bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+    except Exception:
+        bot.sendMessage(chat_id=update.message.chat_id, text="Prima devi creare un utente")
 def help(bot, update):
     #   help(), callback per /help; risponde con un messaggio contenente la lista di comandi.
     #print("command /help from:" + update.message["chat"]["username"])
@@ -131,7 +133,7 @@ Non mi prendo nessuna responsabilita per eventuale perdita di dati.
     bot.sendMessage(chat_id=update.message.chat_id, text=startbanner)
 if __name__ == '__main__':
 
-    updater = Updater(token='154791779:AAECjweY4rBcr2YxUP5Eksqa4rLAR0YlXkk')
+    updater = Updater(token='TOKEN')
     dispatcher = updater.dispatcher
 
     #   add telegram messages and commands handlers
