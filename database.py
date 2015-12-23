@@ -28,6 +28,9 @@ class Database:
         conn.commit()
         conn.close()
 
+
+
+
     @staticmethod
     def checkField(key, field):
         #   open db connection
