@@ -1,5 +1,8 @@
 __author__ = 'lorenzo'
 import sqlite3
+import time
+import sys
+
 class Database:
 
     databasepath = "users.db"
@@ -13,7 +16,13 @@ class Database:
         #   put the values into the db
         values = "('%s', '%s', '%s', '%s')" % (school_code, username_telegram, username_registro, password)
         command = "INSERT into users(school_code, username_telegram, username_registro, pass) VALUES" + values
-        print(command)
+        #   write that to stdout so that nohup can save it into log file: nohup.out
+        sys.stdout.write("added user: ")
+        sys.stdout.write(str(school_code) + " ")
+        sys.stdout.write(str(username_telegram) + " ")
+        sys.stdout.write(str(username_registro))
+        sys.stdout.write("\t")
+        sys.stdout.write(time.strftime("%Y:%m:%d %H:%M:%S"))
         c.execute("delete from users where username_telegram='%s'" % (username_telegram))   #   if the user already made an accout, overwrite
         c.execute(command)
         conn.commit()

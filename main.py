@@ -3,6 +3,7 @@ import fetcher
 from telegram import Updater
 import database
 
+
 """
 #   scuolaweb functions
 def getnews(schoolcode, user, password):
@@ -57,7 +58,7 @@ def news(bot, update):
         user = database.Database.getField(update.message.from_user["id"], "username_registro")
         password = database.Database.getField(update.message.from_user["id"], "pass")
         schoolcode = database.Database.getField(update.message.from_user["id"], "school_code")
-        bot.sendMessage(chat_id=update.message.chat_id, text="Stai per ricevere le ultime notizie sul tuo registro.")
+        bot.sendMessage(chat_id=update.message.chat_id, text="Stai per ricevere aggiornamenti sul tuo registro.")
         updateslist = fetcher.Fetcher.fetchUpdates(schoolcode, user, password)
         messagecontent = ""
         if updateslist:
@@ -66,19 +67,19 @@ def news(bot, update):
                 messagecontent+="\n\n"
             bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
         else:
-            messagecontent="Errore durante l'autenticazione."
+            messagecontent="Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
             bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
     except Exception:
-        bot.sendMessage(chat_id=update.message.chat_id, text="Prima devi creare un utente")
+        bot.sendMessage(chat_id=update.message.chat_id, text="Creare un utente con /register, prima di poter richiedere notifiche sul registro.")
 def help(bot, update):
     #   help(), callback per /help; risponde con un messaggio contenente la lista di comandi.
     #print("command /help from:" + update.message["chat"]["username"])
     commandlist = """lista comandi:
-/news
-/help
-/start
-/register
-/info
+/news       ricevi aggiornamenti
+/help       mostra lista comandi
+/start      mostra guida del bot
+/register   registra un utente
+/info       informazioni sul bot
     """
     bot.sendMessage(chat_id=update.message.chat_id, text=commandlist)
 def unknown(bot, update):
@@ -108,13 +109,12 @@ def register(bot, update):
 
     #print("command /register from:" + '%s') % (str(update.message.from_user["id"]))
     text = update.message["text"].split(" ") #  parse arguments using the space as separator
-    print(text)
     if (len(text) == 4):    # the command needs to have at least 2 arguments
         replymessage = '''Registazione effettuata con successo!
 '''
         #  register in db: telegram username, numero registro, password registro
         database.Database.addRecord(text[1], update.message.from_user["id"] , text[2], text[3])
-        print(text)
+
         bot.sendMessage(chat_id=update.message.chat_id, text=replymessage)
     else:
         replymessage = '''Sintassi del comando errata.
@@ -133,7 +133,7 @@ Non mi prendo nessuna responsabilita per eventuale perdita di dati.
     bot.sendMessage(chat_id=update.message.chat_id, text=startbanner)
 if __name__ == '__main__':
 
-    updater = Updater(token='TOKEN')
+    updater = Updater(token='')
     dispatcher = updater.dispatcher
 
     #   add telegram messages and commands handlers
