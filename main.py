@@ -122,9 +122,8 @@ def register(bot, update):
     else:
         replymessage = '''Sintassi del comando errata.
 /register <codice_scuola> <utente> <password>
-Nota: Il codice della scuola lo trovi nella parte finale dell'url della pagina di login della tua scuola.
-Ad esempio, per l'ITT Pascal di Cesena la pagina di login è https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=FOIC81600G.
-Il codice è la parte finale dopo l'uguale, ovvero: FOIC81600G.
+Nota: Il codice della scuola lo trovi nella pagina principale di https://www.scuolawebromagna.it.
+Ad esempio, per l'ITT Pascal di Cesena il codice è: FOIC81600G.
 '''
         bot.sendMessage(chat_id=update.message.chat_id, text=replymessage)
 def start(bot, update):
