@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 __author__ = 'lorenzo'
 import fetcher
 from telegram import Updater
@@ -118,7 +121,9 @@ def register(bot, update):
         bot.sendMessage(chat_id=update.message.chat_id, text=replymessage)
     else:
         replymessage = '''Sintassi del comando errata.
-/register <codice_scuola> <numero_registro> <password_registro>
+/register <codice_scuola> <utente> <password>
+Nota: Il codice della scuola lo trovi nella pagina principale di https://www.scuolawebromagna.it.
+Ad esempio, per l'ITT Pascal di Cesena il codice è: FOIC81600G.
 '''
         bot.sendMessage(chat_id=update.message.chat_id, text=replymessage)
 def start(bot, update):
@@ -126,9 +131,14 @@ def start(bot, update):
     #   questo comando informa l'utente sull'utilizzo del bot,
     #   viene eseguito quando per la prima volta un utente avvia la chat con il bot.
 
-    startbanner = '''Per cominciare, registrare un utente con il comando /register
-Si consiglia di cambiare la password del registro elettronico con una non usata da nessuna altra parte.
-Non mi prendo nessuna responsabilita per eventuale perdita di dati.
+    startbanner = '''ScuolaWeb Notifier ti permette di consultare i voti del registro elettronico di https://www.scuolawebromagna.it.
+La prima volta devi registrare il tuo utente con il comando /register, specificando il codice della scuola, lo username e la password.
+In seguito, con il comando /news potrai ricevere gli aggiornamenti dei voti pubblicati sul sito.
+
+Attenzione: Il bot, per recuperare i dati, deve eseguire il login sul sito scuolawebromagna.
+Ciò significa che l'utente e la password che registrerai saranno memorizzati sui nostri server.
+Non è possibile fare diversamente perchè scuolawebromagna non dispone di servizi dedicati per la consultazione dei dati.
+Ti suggeriamo di non usare password già usate per altri servizi (es. posta elettronica).
 '''
     bot.sendMessage(chat_id=update.message.chat_id, text=startbanner)
 if __name__ == '__main__':
