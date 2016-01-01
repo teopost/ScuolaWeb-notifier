@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'lorenzo'
 
 import mechanize
@@ -8,7 +9,9 @@ class Fetcher:
     @staticmethod
     def fetchUpdates(schoolcode, user, password):
         try:
-            regex = '<td align="Left" width="600">.*<\/td>'
+            updatesregex = '<td align="Left" width="600">.*<\/td>'
+            dateregex = '<td align="Left" width="80">.*<\/td>'      #   regex user to get dates
+
             url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
 
             browser = mechanize.Browser()
@@ -22,10 +25,19 @@ class Fetcher:
             text = page.read()
 
             #   trova tutte le occorrenze nella pagina secondo la espressione regolare
-            toret=[]
-            for r in re.findall(regex, text):
-                temp = r[29:]
-                toret.append(temp[:-5])
-            return toret
+            fetcheddata=[]
+            updatedates=[]
+            for d in re.findall(dateregex, text):
+                tmp = d[29:]
+                updatedates.append(tmp[:-5])
+
+            index = 0
+            for r in re.findall(updatesregex, text):
+                temp = updatedates[index]
+                temp+="\n"
+                temp+=r[29:]
+                fetcheddata.append(temp[:-5])
+                index+=1
+            return fetcheddata
         except mechanize.ControlNotFoundError:
             return []
