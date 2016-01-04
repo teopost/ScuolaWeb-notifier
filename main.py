@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 __author__ = 'lorenzo'
 import fetcher
 from telegram import Updater
@@ -98,7 +97,7 @@ def info(bot, update):
     #print("command /info from:" + update.message["chat"]["username"])
     infotext="""ScuolaWeb Notifyer by:
 Lorenzo Teodorani, l.teodorani@gmail.com
-Progetto OpenSource su: www.github.com/teopost2/ScuolaWeb/
+Progetto OpenSource su: www.github.com/teopost2/ScuolaWeb-notifier/
 """
     bot.sendMessage(chat_id=update.message.chat_id, text=infotext)
 def register(bot, update):
@@ -141,9 +140,26 @@ Non è possibile fare diversamente perchè scuolawebromagna non dispone di servi
 Ti suggeriamo di non usare password già usate per altri servizi (es. posta elettronica).
 '''
     bot.sendMessage(chat_id=update.message.chat_id, text=startbanner)
+def homeworks(bot, update):
+    user = database.Database.getField(update.message.from_user["id"], "username_registro")
+    password = database.Database.getField(update.message.from_user["id"], "pass")
+    schoolcode = database.Database.getField(update.message.from_user["id"], "school_code")
+    homeworkslist = fetcher.Fetcher.fetchHomeworks(schoolcode, user, password)
+    messagecontent = ""
+    if homeworkslist:
+        for u in homeworkslist:
+            messagecontent+=u
+            messagecontent+="\n\n"
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+    else:
+        messagecontent="sono qui"
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+
+
 if __name__ == '__main__':
 
-    updater = Updater(token='')
+    updater = Updater(token='154791779:AAHX0HPCe2lmdLRotxB7k2O1hC2J71bpjhs')
     dispatcher = updater.dispatcher
 
     #   add telegram messages and commands handlers
@@ -154,5 +170,6 @@ if __name__ == '__main__':
     dispatcher.addTelegramCommandHandler('info', info)
     dispatcher.addTelegramCommandHandler('register', register)
     dispatcher.addTelegramCommandHandler('start', start)
+    dispatcher.addTelegramCommandHandler('homeworks', homeworks)
 
     updater.start_polling()
