@@ -1,19 +1,35 @@
 # -*- coding: utf-8 -*-
 __author__ = 'lorenzo'
 
+'''
+AmbiguityError
+BrowserStateError
+ContentTooShortError
+ControlNotFoundError
+FormNotFoundError
+HTTPDefaultErrorHandler
+HTTPError
+HTTPErrorProcessor
+ItemCountError
+ItemNotFoundError
+LinkNotFoundError
+LoadError
+LocateError
+ParseError
+RobotExclusionError
+URLError
+'''
+
 import mechanize
 import re
 from lxml import html
 
 class Fetcher:
 
+    #   ottiene la pagina principale, effettuato il login in html
     @staticmethod
-    def fetchUpdates(schoolcode, user, password):
+    def login(schoolcode, user, password):
         try:
-            updatesregex = '<td align="Left" width="600">.*<\/td>'
-            #   regex usato per ottenere le date
-            dateregex = '<td align="Left" width="80">.*<\/td>'
-
             url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
 
             browser = mechanize.Browser()
@@ -25,26 +41,13 @@ class Fetcher:
 
             page = browser.submit()
             text = page.read()
-
-            #   trova tutte le occorrenze nella pagina secondo la espressione regolare
-            fetcheddata=[]
-            updatedates=[]
-            for d in re.findall(dateregex, text):
-                tmp = d[29:]
-                updatedates.append(tmp[:-5])
-
-            index = 0
-            for r in re.findall(updatesregex, text):
-                temp = updatedates[index]
-                temp+="\n"
-                temp+=r[29:]
-                fetcheddata.append(temp[:-5])
-                index+=1
-            return fetcheddata
+            return text
         except mechanize.ControlNotFoundError:
-            return []
+            raise mechanize.ControlNotFoundError
+
+    #   ottiene la pagina Visualizza->studenti in html
     @staticmethod
-    def fetchHomeworks(schoolcode, user, password):
+    def students(schoolcode, user, password):
         try:
             url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
             urlhomeworkspage = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/FMp05.aspx"
@@ -68,12 +71,50 @@ class Fetcher:
             page = browser.submit(name="ctl00$ContentPlaceHolder1$btnVisualizza")
             #   scarica la pagina ottenuta
             text = page.read()
+            return text
+        except mechanize.ControlNotFoundError:
+            raise mechanize.ControlNotFoundError
+
+
+    @staticmethod
+    def fetchUpdates(schoolcode, user, password):
+        try:
+            text = Fetcher.login(schoolcode, user, password)
+            updatesregex = '<td align="Left" width="600">.*<\/td>'
+            #   regex usato per ottenere le date
+            dateregex = '<td align="Left" width="80">.*<\/td>'
+            #   trova tutte le occorrenze nella pagina secondo la espressione regolare
+            fetcheddata=[]
+            updatedates=[]
+            for d in re.findall(dateregex, text):
+                tmp = d[29:]
+                updatedates.append(tmp[:-5])
+
+            index = 0
+            for r in re.findall(updatesregex, text):
+                temp = updatedates[index]
+                temp+="\n"
+                temp+=r[29:]
+                fetcheddata.append(temp[:-5])
+                index+=1
+            if fetcheddata:
+                return fetcheddata
+            else:
+                nomathces = ["La tabella dei voti è vuota, riprovare piu tardi."]
+                return nomathces
+        except mechanize.ControlNotFoundError:
+            raise mechanize.ControlNotFoundError
 
 
 
+    @staticmethod
+    def fetchHomeworks(schoolcode, user, password):
+        try:
+            #   scarica html
+            page = Fetcher.students(schoolcode, user, password)
 
             #   costruisce albero rappresentante pagina html usando la pagina appena scaricata
-            tree = html.fromstring(text)
+            tree = html.fromstring(page)
 
             #   oggetto da ritornare
             fetchedhomeworks=[]
@@ -89,6 +130,5 @@ class Fetcher:
                 fetchedhomeworks[index]+=sel.xpath('td[3]/text()')[0]   # aggiunge la data di consegna
                 index+=1
             return fetchedhomeworks
-
         except mechanize.ControlNotFoundError:
-            return []
+            raise mechanize.ControlNotFoundError

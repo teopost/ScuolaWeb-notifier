@@ -64,8 +64,8 @@ class Database:
             c.execute(command)
             toret = c.fetchone()[0]
             return toret
-        except Exception:
-            raise Exception
+        except TypeError:
+            raise TypeError
 
     @staticmethod
     def deleteRecord(key):
