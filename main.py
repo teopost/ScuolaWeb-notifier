@@ -5,6 +5,7 @@ import fetcher
 from telegram import Updater
 import database
 import mechanize
+import logging
 
 """
 #   scuolaweb functions
@@ -171,11 +172,15 @@ def homeworks(bot, update):
     except TypeError:
         messagecontent="Registrare un utente prima di poter usare il comando"
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
-
+    #except mechanize.FormNotFoundError:
+        #messagecontent="Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+        #bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
 if __name__ == '__main__':
 
-    updater = Updater(token='')
+    logging.basicConfig(filename='history.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
+
+    updater = Updater(token='146925850:AAFKaeygDdObdUJ8uzHmhHJxEfD1P2NlVv0')
     dispatcher = updater.dispatcher
 
     #   add telegram messages and commands handlers

@@ -44,6 +44,8 @@ class Fetcher:
             return text
         except mechanize.ControlNotFoundError:
             raise mechanize.ControlNotFoundError
+        #except mechanize.FormNotFoundError:
+            #raise mechanize.FormNotFoundError
 
     #   ottiene la pagina Visualizza->studenti in html
     @staticmethod
@@ -74,7 +76,8 @@ class Fetcher:
             return text
         except mechanize.ControlNotFoundError:
             raise mechanize.ControlNotFoundError
-
+        #except mechanize.FormNotFoundError:
+            #raise mechanize.FormNotFoundError
 
     @staticmethod
     def fetchUpdates(schoolcode, user, password):
@@ -104,7 +107,8 @@ class Fetcher:
                 return nomathces
         except mechanize.ControlNotFoundError:
             raise mechanize.ControlNotFoundError
-
+        #except mechanize.FormNotFoundError:
+            #raise mechanize.FormNotFoundError
 
 
     @staticmethod
@@ -132,3 +136,5 @@ class Fetcher:
             return fetchedhomeworks
         except mechanize.ControlNotFoundError:
             raise mechanize.ControlNotFoundError
+        #except mechanize.FormNotFoundError:
+            #raise mechanize.FormNotFoundError
