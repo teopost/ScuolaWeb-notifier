@@ -133,18 +133,17 @@ def register(bot, update):
     '''
 
 
-    try:
-        fetcher.Fetcher.login(schoolcode = text[1], user=text[2], password=text[3])
-    except mechanize.HTTPError:
-        bot.sendMessage(chat_id=update.message.chat_id, text="Il registro elettronico specificato non esiste!\nIl codice scuola potrebbe essere errato")
-        return
-    except mechanize.ControlNotFoundError:
-        bot.sendMessage(chat_id=update.message.chat_id, text="Il registro elettronico specificato non esiste!\nIl codice scuola potrebbe essere errato")
-        return
-
     if (len(text) == 4):    # the command needs to have at least 2 arguments
         replymessage = '''Registazione effettuata con successo!
 '''
+        try:
+            fetcher.Fetcher.login(schoolcode = text[1], user=text[2], password=text[3])
+        except mechanize.HTTPError:
+            bot.sendMessage(chat_id=update.message.chat_id, text="Il registro elettronico specificato non esiste!\nIl codice scuola potrebbe essere errato")
+            return
+        except mechanize.ControlNotFoundError:
+            bot.sendMessage(chat_id=update.message.chat_id, text="Il registro elettronico specificato non esiste!\nIl codice scuola potrebbe essere errato")
+            return
         #  register in db: school code, telegram id, username, pass registro
         database.Database.addRecord(text[1], update.message.from_user["id"] , text[2], text[3])
 
@@ -206,7 +205,7 @@ if __name__ == '__main__':
 
     logging.basicConfig(filename='history.log', level=logging.INFO, format='%(asctime)s %(message)s')
 
-    updater = Updater(token='146925850:AAFKaeygDdObdUJ8uzHmhHJxEfD1P2NlVv0')
+    updater = Updater(token='146925850:AAG0M5jUF5K1eFcFag9bZTo31Kg8sxMMPfc')
     dispatcher = updater.dispatcher
 
     #   add telegram messages and commands handlers
