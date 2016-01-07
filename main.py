@@ -205,7 +205,7 @@ if __name__ == '__main__':
 
     logging.basicConfig(filename='history.log', level=logging.INFO, format='%(asctime)s %(message)s')
 
-    updater = Updater(token='146925850:AAG0M5jUF5K1eFcFag9bZTo31Kg8sxMMPfc')
+    updater = Updater(token='')
     dispatcher = updater.dispatcher
 
     #   add telegram messages and commands handlers
