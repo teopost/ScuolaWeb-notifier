@@ -110,20 +110,42 @@ Progetto OpenSource su: www.github.com/teopost2/ScuolaWeb-notifier/
 """
     bot.sendMessage(chat_id=update.message.chat_id, text=infotext)
 def register(bot, update):
-    #   register(), callback per /register.
-    #   il comando register, registra un nuovo utente del db.
-    #   per ogni utente viene salvata password e numero di accesso al sito del registro.
-    #   questi dati sono ottenuti quando l'utente scrice il comando secondo la sintassi:
-    #   /register <numero_registro> <password>
-    #   nel caso la del comando non sia rispettata, viene inviato un messaggio di errore.
+    '''   register(), callback per /register.
+       il comando register, registra un nuovo utente del db.
+       per ogni utente viene salvata password e numero di accesso al sito del registro.
+       questi dati sono ottenuti quando l'utente scrice il comando secondo la sintassi:
+      /register <numero_registro> <password>
+       nel caso la del comando non sia rispettata, viene inviato un messaggio di errore.
+    '''
 
 
     #print("command /register from:" + '%s') % (str(update.message.from_user["id"]))
     text = update.message["text"].split(" ") #  parse arguments using the space as separator
+
+    ''' prova a d effettuare il login.
+        mechanize.HTTPError viene ritornato del server quando vengono rilevati caratteri potenzialmente
+        dannosi per il sito (es: caratteri come maggiore o minore vengono interpretati come un linguaggio di markup
+        e quindi un potenziale attacco injection)
+
+        mechanize.ControlNotFoundException viene ritornato nel caso in cui venga specificato un codice di scuola inesistente
+        in questo caso la pagina ritornata non conicide con quella di login di una scuola e non
+        contiene il form specificato nel metodo Fetcher.login() 'ctl06'.
+    '''
+
+
+    try:
+        fetcher.Fetcher.login(schoolcode = text[1], user=text[2], password=text[3])
+    except mechanize.HTTPError:
+        bot.sendMessage(chat_id=update.message.chat_id, text="Il registro elettronico specificato non esiste!\nIl codice scuola potrebbe essere errato")
+        return
+    except mechanize.ControlNotFoundError:
+        bot.sendMessage(chat_id=update.message.chat_id, text="Il registro elettronico specificato non esiste!\nIl codice scuola potrebbe essere errato")
+        return
+
     if (len(text) == 4):    # the command needs to have at least 2 arguments
         replymessage = '''Registazione effettuata con successo!
 '''
-        #  register in db: telegram username, numero registro, password registro
+        #  register in db: school code, telegram id, username, pass registro
         database.Database.addRecord(text[1], update.message.from_user["id"] , text[2], text[3])
 
         bot.sendMessage(chat_id=update.message.chat_id, text=replymessage)
@@ -164,21 +186,25 @@ def homeworks(bot, update):
             messagecontent+="\n\n"
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
-#   gestisci caso con credenziali errate di login
+    #   gestisci caso di credenziali non corrette
+    except mechanize.FormNotFoundError:
+        messagecontent="Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+    #   gestisci caso con credenziali errate di login
     except mechanize.ControlNotFoundError:
         messagecontent="Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
     #   gesitsci caso con credenziali inesistenti, es: utente nuovo esegue /news senza prima registrarsi con /register
     except TypeError:
         messagecontent="Registrare un utente prima di poter usare il comando"
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
-    #except mechanize.FormNotFoundError:
-        #messagecontent="Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
-        #bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
 
 if __name__ == '__main__':
 
-    logging.basicConfig(filename='history.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
+    logging.basicConfig(filename='history.log', level=logging.INFO, format='%(asctime)s %(message)s')
 
     updater = Updater(token='146925850:AAFKaeygDdObdUJ8uzHmhHJxEfD1P2NlVv0')
     dispatcher = updater.dispatcher
