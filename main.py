@@ -53,6 +53,8 @@ def message(bot, update):
     #   message() fa da callback nel caso un messaggio (NON comando come: /help, /start...)
     #   viene inviato al bot
     print("message from:" + update.message["chat"]["username"])
+
+
 def news(bot, update):
     #   news(), callback del comando /news.
     #   news() scarica gli aggiornamenti con genews(), fa il confronto con compare();
@@ -68,23 +70,29 @@ def news(bot, update):
 
         #   formatta il messaggio
         for u in updateslist:
-            messagecontent+=u
-            messagecontent+="\n\n"
+            messagecontent += u
+            messagecontent += "\n\n"
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
-    #   gestisci caso con credenziali errate di login
+    # gestisci caso con credenziali errate di login
     except mechanize.ControlNotFoundError:
-        messagecontent="Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
-    #   gesitsci caso con credenziali inesistenti, es: utente nuovo esegue /news senza prima registrarsi con /register
+    # gesitsci caso con credenziali inesistenti, es: utente nuovo esegue /news senza prima registrarsi con /register
     except TypeError:
-        messagecontent="Registrare un utente prima di poter usare il comando"
+        messagecontent = "Registrare un utente prima di poter usare il comando"
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+
+def users(bot, update):
+    count = database.Database.countRows()
+    message = "Numero di utenti registrati: " + count
+    bot.sendMessage(chat_id=update.message.chat_id, text=message)
 
 
 def help(bot, update):
     #   help(), callback per /help; risponde con un messaggio contenente la lista di comandi.
-    #print("command /help from:" + update.message["chat"]["username"])
+    # print("command /help from:" + update.message["chat"]["username"])
     commandlist = """lista comandi:
 /news       ricevi aggiornamenti
 /help       mostra lista comandi
@@ -93,22 +101,28 @@ def help(bot, update):
 /info       informazioni sul bot
     """
     bot.sendMessage(chat_id=update.message.chat_id, text=commandlist)
+
+
 def unknown(bot, update):
     #   callback per comando sconosciuto, um messaggio di errore viene inviato all'utente per avvisarlo
-    #print("unkown command from:" + update.message["chat"]["username"])
+    # print("unkown command from:" + update.message["chat"]["username"])
     commandlist = """Il comando non esiste.
 usa /help per mostrare la lista comandi.
 """
     bot.sendMessage(chat_id=update.message.chat_id, text=commandlist)
+
+
 def info(bot, update):
     #   callback per /info.
     #   invia un mesasggio informativo sul progetto.
-    #print("command /info from:" + update.message["chat"]["username"])
-    infotext="""ScuolaWeb Notifyer by:
+    # print("command /info from:" + update.message["chat"]["username"])
+    infotext = """ScuolaWeb Notifyer by:
 Lorenzo Teodorani, l.teodorani@gmail.com
 Progetto OpenSource su: www.github.com/teopost2/ScuolaWeb-notifier/
 """
     bot.sendMessage(chat_id=update.message.chat_id, text=infotext)
+
+
 def register(bot, update):
     '''   register(), callback per /register.
        il comando register, registra un nuovo utente del db.
@@ -119,8 +133,8 @@ def register(bot, update):
     '''
 
 
-    #print("command /register from:" + '%s') % (str(update.message.from_user["id"]))
-    text = update.message["text"].split(" ") #  parse arguments using the space as separator
+    # print("command /register from:" + '%s') % (str(update.message.from_user["id"]))
+    text = update.message["text"].split(" ")  # parse arguments using the space as separator
 
     ''' prova a d effettuare il login.
         mechanize.HTTPError viene ritornato del server quando vengono rilevati caratteri potenzialmente
@@ -132,20 +146,24 @@ def register(bot, update):
         contiene il form specificato nel metodo Fetcher.login() 'ctl06'.
     '''
 
-
-    if (len(text) == 4):    # the command needs to have at least 2 arguments
+    if (len(text) == 4):  # the command needs to have at least 2 arguments
         replymessage = '''Registazione effettuata con successo!
 '''
         try:
-            fetcher.Fetcher.login(schoolcode = text[1], user=text[2], password=text[3])
+            fetcher.Fetcher.login(schoolcode=text[1], user=text[2], password=text[3])
         except mechanize.HTTPError:
-            bot.sendMessage(chat_id=update.message.chat_id, text="Il registro elettronico specificato non esiste!\nIl codice scuola potrebbe essere errato")
+            bot.sendMessage(chat_id=update.message.chat_id,
+                            text="Il registro elettronico specificato non esiste!\nIl codice scuola potrebbe essere errato")
             return
         except mechanize.ControlNotFoundError:
-            bot.sendMessage(chat_id=update.message.chat_id, text="Il registro elettronico specificato non esiste!\nIl codice scuola potrebbe essere errato")
+            bot.sendMessage(chat_id=update.message.chat_id,
+                            text="Il registro elettronico specificato non esiste!\nIl codice scuola potrebbe essere errato")
             return
-        #  register in db: school code, telegram id, username, pass registro
-        database.Database.addRecord(text[1], update.message.from_user["id"] , text[2], text[3])
+        except UnicodeEncodeError:
+            bot.sendMessage(chat_id=update.message.chat_id, text="Scuolaweb non supporta questo carattere!")
+            return
+        # register in db: school code, telegram id, username, pass registro
+        database.Database.addRecord(text[1], update.message.from_user["id"], text[2], text[3])
 
         bot.sendMessage(chat_id=update.message.chat_id, text=replymessage)
     else:
@@ -155,6 +173,8 @@ Nota: Il codice della scuola lo trovi nella pagina principale di https://www.scu
 Ad esempio, per l'ITT Pascal di Cesena il codice è: FOIC81600G.
 '''
         bot.sendMessage(chat_id=update.message.chat_id, text=replymessage)
+
+
 def start(bot, update):
     #   start(), callback per /start
     #   questo comando informa l'utente sull'utilizzo del bot,
@@ -170,6 +190,8 @@ Non è possibile fare diversamente perchè scuolawebromagna non dispone di servi
 Ti suggeriamo di non usare password già usate per altri servizi (es. posta elettronica).
 '''
     bot.sendMessage(chat_id=update.message.chat_id, text=startbanner)
+
+
 def homeworks(bot, update):
     try:
 
@@ -181,28 +203,27 @@ def homeworks(bot, update):
         messagecontent = ""
 
         for u in homeworkslist:
-            messagecontent+=u
-            messagecontent+="\n\n"
+            messagecontent += u
+            messagecontent += "\n\n"
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
-    #   gestisci caso di credenziali non corrette
+    # gestisci caso di credenziali non corrette
     except mechanize.FormNotFoundError:
-        messagecontent="Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
-    #   gestisci caso con credenziali errate di login
+    # gestisci caso con credenziali errate di login
     except mechanize.ControlNotFoundError:
-        messagecontent="Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
-    #   gesitsci caso con credenziali inesistenti, es: utente nuovo esegue /news senza prima registrarsi con /register
+    # gesitsci caso con credenziali inesistenti, es: utente nuovo esegue /news senza prima registrarsi con /register
     except TypeError:
-        messagecontent="Registrare un utente prima di poter usare il comando"
+        messagecontent = "Registrare un utente prima di poter usare il comando"
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
 
 if __name__ == '__main__':
-
     logging.basicConfig(filename='history.log', level=logging.INFO, format='%(asctime)s %(message)s')
 
     updater = Updater(token='')
@@ -217,5 +238,6 @@ if __name__ == '__main__':
     dispatcher.addTelegramCommandHandler('register', register)
     dispatcher.addTelegramCommandHandler('start', start)
     dispatcher.addTelegramCommandHandler('homeworks', homeworks)
+    dispatcher.addTelegramCommandHandler('users', users)
 
     updater.start_polling()

@@ -3,8 +3,8 @@ import sqlite3
 import time
 import sys
 
-class Database:
 
+class Database:
     databasepath = "users.db"
 
     #   DATABASE MANAGEMENT
@@ -23,13 +23,11 @@ class Database:
         sys.stdout.write(str(username_registro))
         sys.stdout.write("\t")
         sys.stdout.write(time.strftime("%Y:%m:%d %H:%M:%S"))
-        c.execute("delete from users where username_telegram='%s'" % (username_telegram))   #   if the user already made an accout, overwrite
+        c.execute("delete from users where username_telegram='%s'" % (
+        username_telegram))  # if the user already made an accout, overwrite
         c.execute(command)
         conn.commit()
         conn.close()
-
-
-
 
     @staticmethod
     def checkField(key, field):
@@ -44,6 +42,19 @@ class Database:
         return True
 
     @staticmethod
+    def countRows():
+        #   open db connection
+        conn = sqlite3.connect(Database.databasepath, detect_types=sqlite3.PARSE_COLNAMES)
+        c = conn.cursor()
+
+        command = "SELECT count(*) FROM users"
+        c.execute(command)
+        toret = c.fetchone()[0]
+        conn.commit()
+        conn.close()
+        return toret
+
+    @staticmethod
     def updateField(key, field, value):
         #   open db connection
         conn = sqlite3.connect(Database.databasepath, detect_types=sqlite3.PARSE_COLNAMES)
@@ -55,7 +66,6 @@ class Database:
 
     @staticmethod
     def getField(key, field):
-
         #   open db connection
         conn = sqlite3.connect(Database.databasepath, detect_types=sqlite3.PARSE_COLNAMES)
         c = conn.cursor()
@@ -64,7 +74,6 @@ class Database:
         c.execute(command)
         toret = c.fetchone()[0]
         return toret
-
 
     @staticmethod
     def deleteRecord(key):
