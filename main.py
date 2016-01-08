@@ -99,6 +99,7 @@ def help(bot, update):
 /start      mostra guida del bot
 /register   registra un utente
 /info       informazioni sul bot
+/homeworks  mostra i compiti per casa
     """
     bot.sendMessage(chat_id=update.message.chat_id, text=commandlist)
 
