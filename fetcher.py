@@ -2,6 +2,8 @@
 __author__ = 'lorenzo'
 
 '''
+Errori di mechanize:
+
 AmbiguityError
 BrowserStateError
 ContentTooShortError
@@ -44,7 +46,7 @@ class Fetcher:
         return text
     #   ottiene la pagina Visualizza->studenti in html
     @staticmethod
-    def students(schoolcode, user, password):
+    def students(schoolcode, user, password, droplistitem):
 
         url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
         urlhomeworkspage = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/FMp05.aspx"
@@ -66,13 +68,12 @@ class Fetcher:
         #   se il form 'aspenetForm' non esiste, il login è fallito, e broswer.open() ritorna una pagina diversa da quella aspettata quindi le credenziali sono errate
         browser.select_form(name="aspnetForm")
         #   va nel menu a tendina e sceglie Compiti assegnati
-        browser.form["ctl00$ContentPlaceHolder1$lstArchivio"] = ["Compiti assegnati"]
+        browser.form["ctl00$ContentPlaceHolder1$lstArchivio"] = [droplistitem]
         #   preme il pulsante Visualizza
         page = browser.submit(name="ctl00$ContentPlaceHolder1$btnVisualizza")
         #   scarica la pagina ottenuta
         text = page.read()
         return text
-
 
     @staticmethod
     def fetchUpdates(schoolcode, user, password):
@@ -101,13 +102,11 @@ class Fetcher:
             nomathces = ["La tabella dei voti è vuota, riprovare piu tardi."]
             return nomathces
 
-
-
     @staticmethod
     def fetchHomeworks(schoolcode, user, password):
 
         #   scarica html
-        page = Fetcher.students(schoolcode, user, password)
+        page = Fetcher.students(schoolcode, user, password, "Compiti assegnati")
 
         #   costruisce albero rappresentante pagina html usando la pagina appena scaricata
         tree = html.fromstring(page)
@@ -124,5 +123,32 @@ class Fetcher:
             fetchedhomeworks[index]+=sel.xpath('td[2]/text()')[0]   # aggiunge il corpo
             fetchedhomeworks[index]+="\nDa consegnare entro: "
             fetchedhomeworks[index]+=sel.xpath('td[3]/text()')[0]   # aggiunge la data di consegna
+            index+=1
+        return fetchedhomeworks
+
+    @staticmethod
+    def fetchArguments(schoolcode, user, password):
+        '''
+        scarica la tabella degli argomenti svolti
+        e la inoltra all'utente
+        '''
+        #   scarica html
+        page = Fetcher.students(schoolcode, user, password, "Argomenti svolti")
+
+        #   costruisce albero rappresentante pagina html usando la pagina appena scaricata
+        tree = html.fromstring(page)
+
+        #   oggetto da ritornare
+        fetchedhomeworks=[]
+        #   indice usato nel ciclo; in for(int x=0;x<k;x++) equivalente a x. evita di usare la funzione python enumerate
+        index = 0
+        #   cicla tra le righe prime 6 della tabella dei compiti, saltando la prima
+        for sel in tree.xpath('//*[@id="ctl00_ContentPlaceHolder1_tblStud"]/tr')[1:6]:
+            #   costruisce il messaggio, variando l'indice in td[] si seleziona una diversa colonna della tabella
+            fetchedhomeworks.append(sel.xpath('td[5]/text()')[0])   # aggiunge la materia
+            fetchedhomeworks[index]+="\n"
+            fetchedhomeworks[index]+=sel.xpath('td[2]/text()')[0]   # aggiunge il corpo del messaggio
+            fetchedhomeworks[index]+="\nSvolto in data: "
+            fetchedhomeworks[index]+=sel.xpath('td[1]/text()')[0]   # aggiunge la data di consegna
             index+=1
         return fetchedhomeworks

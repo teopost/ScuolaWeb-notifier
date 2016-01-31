@@ -86,7 +86,7 @@ def news(bot, update):
 
 def users(bot, update):
     count = database.Database.countRows()
-    message = "Numero di utenti registrati: " + count
+    message = "Numero di utenti registrati: %d" % count
     bot.sendMessage(chat_id=update.message.chat_id, text=message)
 
 
@@ -223,6 +223,37 @@ def homeworks(bot, update):
         messagecontent = "Registrare un utente prima di poter usare il comando"
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
+def arguments(bot, update):
+    try:
+
+        user = database.Database.getField(update.message.from_user["id"], "username_registro")
+        password = database.Database.getField(update.message.from_user["id"], "pass")
+        bot.sendMessage(chat_id=update.message.chat_id, text="Stai per ricevere aggiornamenti sugli argomenti svolti.")
+        schoolcode = database.Database.getField(update.message.from_user["id"], "school_code")
+        homeworkslist = fetcher.Fetcher.fetchArguments(schoolcode, user, password)
+        messagecontent = ""
+
+        for u in homeworkslist:
+            messagecontent += u
+            messagecontent += "\n\n"
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+    # gestisci caso di credenziali non corrette
+    except mechanize.FormNotFoundError:
+        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+    # gestisci caso con credenziali errate di login
+    except mechanize.ControlNotFoundError:
+        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+    # gesitsci caso con credenziali inesistenti, es: utente nuovo esegue /news senza prima registrarsi con /register
+    except TypeError:
+        messagecontent = "Registrare un utente prima di poter usare il comando"
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+
 
 if __name__ == '__main__':
     logging.basicConfig(filename='history.log', level=logging.INFO, format='%(asctime)s %(message)s')
@@ -232,13 +263,14 @@ if __name__ == '__main__':
 
     #   add telegram messages and commands handlers
     dispatcher.addTelegramMessageHandler(message)
-    dispatcher.addTelegramCommandHandler('news', news)
+    dispatcher.addTelegramCommandHandler('voti', news)
     dispatcher.addTelegramCommandHandler('help', help)
     dispatcher.addUnknownTelegramCommandHandler(unknown)
     dispatcher.addTelegramCommandHandler('info', info)
-    dispatcher.addTelegramCommandHandler('register', register)
+    dispatcher.addTelegramCommandHandler('registra', register)
     dispatcher.addTelegramCommandHandler('start', start)
-    dispatcher.addTelegramCommandHandler('homeworks', homeworks)
+    dispatcher.addTelegramCommandHandler('compiti', homeworks)
     dispatcher.addTelegramCommandHandler('users', users)
+    dispatcher.addTelegramCommandHandler('argomenti', arguments)
 
     updater.start_polling()
