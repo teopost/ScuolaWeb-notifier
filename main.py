@@ -94,12 +94,13 @@ def help(bot, update):
     #   help(), callback per /help; risponde con un messaggio contenente la lista di comandi.
     # print("command /help from:" + update.message["chat"]["username"])
     commandlist = """lista comandi:
-/news       ricevi aggiornamenti
+/voti       ricevi aggiornamenti
 /help       mostra lista comandi
 /start      mostra guida del bot
-/register   registra un utente
+/registra   registra un utente
 /info       informazioni sul bot
-/homeworks  mostra i compiti per casa
+/compiti  mostra i compiti per casa
+/argomenti  argomenti svolti
     """
     bot.sendMessage(chat_id=update.message.chat_id, text=commandlist)
 
@@ -171,7 +172,7 @@ def register(bot, update):
         replymessage = '''Sintassi del comando errata.
 /register <codice_scuola> <utente> <password>
 Nota: Il codice della scuola lo trovi nella pagina principale di https://www.scuolawebromagna.it.
-Ad esempio, per l'ITT Pascal di Cesena il codice è: FOIC81600G.
+Ad esempio, per l'ITT Pascal di Cesena il codice è: FOTF010008
 '''
         bot.sendMessage(chat_id=update.message.chat_id, text=replymessage)
 
@@ -182,8 +183,9 @@ def start(bot, update):
     #   viene eseguito quando per la prima volta un utente avvia la chat con il bot.
 
     startbanner = '''ScuolaWeb Notifier ti permette di consultare i voti del registro elettronico di https://www.scuolawebromagna.it.
-La prima volta devi registrare il tuo utente con il comando /register, specificando il codice della scuola, lo username e la password.
-In seguito, con il comando /news potrai ricevere gli aggiornamenti dei voti pubblicati sul sito.
+La prima volta devi registrare il tuo utente con il comando /registra, specificando il codice della scuola, lo username e la password.
+In seguito, potrai ottenere aggiornamenti dal tuo registro elettronico utilizzando il comando appropriato.
+per vedere la lista completa dei comandi usa il comando: /help
 
 Attenzione: Il bot, per recuperare i dati, deve eseguire il login sul sito scuolawebromagna.
 Ciò significa che l'utente e la password che registrerai saranno memorizzati sui nostri server.
@@ -258,7 +260,7 @@ def arguments(bot, update):
 if __name__ == '__main__':
     logging.basicConfig(filename='history.log', level=logging.INFO, format='%(asctime)s %(message)s')
 
-    updater = Updater(token='')
+    updater = Updater(token='146925850:AAGPyyxzr-TGGbnfMbF_735fN5jqXK9xuAE')
     dispatcher = updater.dispatcher
 
     #   add telegram messages and commands handlers
