@@ -28,7 +28,7 @@ from lxml import html
 
 class Fetcher:
 
-    #   ottiene la pagina principale, effettuato il login in html
+    #   ottiene la pagina home, effettuato il login in html
     @staticmethod
     def login(schoolcode, user, password):
 
@@ -44,6 +44,7 @@ class Fetcher:
         page = browser.submit()
         text = page.read()
         return text
+
     #   ottiene la pagina Visualizza->studenti in html
     @staticmethod
     def students(schoolcode, user, password, droplistitem):
@@ -76,33 +77,6 @@ class Fetcher:
         return text
 
     @staticmethod
-    def fetchUpdates(schoolcode, user, password):
-
-        text = Fetcher.login(schoolcode, user, password)
-        updatesregex = '<td align="Left" width="600">.*<\/td>'
-        #   regex usato per ottenere le date
-        dateregex = '<td align="Left" width="80">.*<\/td>'
-        #   trova tutte le occorrenze nella pagina secondo la espressione regolare
-        fetcheddata=[]
-        updatedates=[]
-        for d in re.findall(dateregex, text):
-            tmp = d[29:]
-            updatedates.append(tmp[:-5])
-
-        index = 0
-        for r in re.findall(updatesregex, text):
-            temp = updatedates[index]
-            temp+="\n"
-            temp+=r[29:]
-            fetcheddata.append(temp[:-5])
-            index+=1
-        if fetcheddata:
-            return fetcheddata
-        else:
-            nomathces = ["La tabella dei voti è vuota, riprovare piu tardi."]
-            return nomathces
-
-    @staticmethod
     def fetchHomeworks(schoolcode, user, password):
 
         #   scarica html
@@ -127,10 +101,63 @@ class Fetcher:
         return fetchedhomeworks
 
     @staticmethod
+    def fetchMarks(schoolcode, user, password):
+
+        #   scarica html
+        page = Fetcher.students(schoolcode, user, password, "Voti")
+
+        #   costruisce albero rappresentante pagina html usando la pagina appena scaricata
+        tree = html.fromstring(page)
+
+        #   oggetto da ritornare
+        fetchedmarks=[]
+        #   indice usato nel ciclo; in for(int x=0;x<k;x++) equivalente a x. evita di usare la funzione python enumerate
+        index = 0
+        #   cicla tra le righe prime 6 della tabella dei compiti, saltando la prima
+        for sel in tree.xpath('//*[@id="ctl00_ContentPlaceHolder1_tblStud"]/tr')[1:6]:
+            #   costruisce il messaggio, variando l'indice in td[] si seleziona una diversa colonna della tabella
+            fetchedmarks.append("materia: "+sel.xpath('td[2]/text()')[0])   # aggiunge la materia
+            fetchedmarks[index]+="\ndata: "
+            fetchedmarks[index]+=sel.xpath('td[1]/text()')[0]   # aggiunge il corpo
+            fetchedmarks[index]+="\ntipo: "
+            fetchedmarks[index]+=sel.xpath('td[3]/text()')[0]
+            fetchedmarks[index]+="\nvoto: "
+            fetchedmarks[index]+=sel.xpath('td[4]/text()')[0]   # aggiunge il voto
+            fetchedmarks[index]+="\npeso: "
+            fetchedmarks[index]+=sel.xpath('td[5]/text()')[0]   # aggiunge il voto
+            index+=1
+        return fetchedmarks
+
+    @staticmethod
+    def fetchCommunications(schoolcode, user, password):
+        #   scarica html
+        page = Fetcher.students(schoolcode, user, password, "Comunicazioni")
+
+        #   costruisce albero rappresentante pagina html usando la pagina appena scaricata
+        tree = html.fromstring(page)
+
+        #   oggetto da ritornare
+        fetchedaCommunications=[]
+        #   indice usato nel ciclo; in for(int x=0;x<k;x++) equivalente a x. evita di usare la funzione python enumerate
+        index = 0
+        #   cicla tra le righe prime 6 della tabella dei compiti, saltando la prima
+        for sel in tree.xpath('//*[@id="ctl00_ContentPlaceHolder1_tblStud"]/tr')[1:8]:
+            #   costruisce il messaggio, variando l'indice in td[] si seleziona una diversa colonna della tabella
+            fetchedaCommunications.append(sel.xpath('td[1]/text()')[0])
+            fetchedaCommunications[index]+="\n"
+            fetchedaCommunications[index]+=sel.xpath('td[2]/text()')[0]
+            fetchedaCommunications[index]+="\ndata evento: "
+            evtdata = sel.xpath('td[3]/text()')[0]
+            if evtdata == "&nbsp":
+                evtdata = "---"
+            fetchedaCommunications[index]+=evtdata
+            index+=1
+        return fetchedaCommunications
+
+    @staticmethod
     def fetchArguments(schoolcode, user, password):
         '''
         scarica la tabella degli argomenti svolti
-        e la inoltra all'utente
         '''
         #   scarica html
         page = Fetcher.students(schoolcode, user, password, "Argomenti svolti")
@@ -139,16 +166,16 @@ class Fetcher:
         tree = html.fromstring(page)
 
         #   oggetto da ritornare
-        fetchedhomeworks=[]
+        fetchedarguments=[]
         #   indice usato nel ciclo; in for(int x=0;x<k;x++) equivalente a x. evita di usare la funzione python enumerate
         index = 0
         #   cicla tra le righe prime 6 della tabella dei compiti, saltando la prima
         for sel in tree.xpath('//*[@id="ctl00_ContentPlaceHolder1_tblStud"]/tr')[1:6]:
             #   costruisce il messaggio, variando l'indice in td[] si seleziona una diversa colonna della tabella
-            fetchedhomeworks.append(sel.xpath('td[5]/text()')[0])   # aggiunge la materia
-            fetchedhomeworks[index]+="\n"
-            fetchedhomeworks[index]+=sel.xpath('td[2]/text()')[0]   # aggiunge il corpo del messaggio
-            fetchedhomeworks[index]+="\nSvolto in data: "
-            fetchedhomeworks[index]+=sel.xpath('td[1]/text()')[0]   # aggiunge la data di consegna
+            fetchedarguments.append(sel.xpath('td[5]/text()')[0])   # aggiunge la materia
+            fetchedarguments[index]+="\n"
+            fetchedarguments[index]+=sel.xpath('td[2]/text()')[0]   # aggiunge il corpo del messaggio
+            fetchedarguments[index]+="\nSvolto in data: "
+            fetchedarguments[index]+=sel.xpath('td[1]/text()')[0]   # aggiunge la data di consegna
             index+=1
-        return fetchedhomeworks
+        return fetchedarguments

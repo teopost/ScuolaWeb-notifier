@@ -55,35 +55,6 @@ def message(bot, update):
     print("message from:" + update.message["chat"]["username"])
 
 
-def news(bot, update):
-    #   news(), callback del comando /news.
-    #   news() scarica gli aggiornamenti con genews(), fa il confronto con compare();
-    #   infine un messaggio contenente gli aggiornamenti, viene inviato all'utente che ne ha fatto richiesta.
-    try:
-        #   carica le credenziali dal db
-        user = database.Database.getField(update.message.from_user["id"], "username_registro")
-        password = database.Database.getField(update.message.from_user["id"], "pass")
-        schoolcode = database.Database.getField(update.message.from_user["id"], "school_code")
-        bot.sendMessage(chat_id=update.message.chat_id, text="Stai per ricevere aggiornamenti sul tuo registro.")
-        updateslist = fetcher.Fetcher.fetchUpdates(schoolcode, user, password)
-        messagecontent = ""
-
-        #   formatta il messaggio
-        for u in updateslist:
-            messagecontent += u
-            messagecontent += "\n\n"
-        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
-
-    # gestisci caso con credenziali errate di login
-    except mechanize.ControlNotFoundError:
-        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
-        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
-    # gesitsci caso con credenziali inesistenti, es: utente nuovo esegue /news senza prima registrarsi con /register
-    except TypeError:
-        messagecontent = "Registrare un utente prima di poter usare il comando"
-        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
-
-
 def users(bot, update):
     count = database.Database.countRows()
     message = "Numero di utenti registrati: %d" % count
@@ -94,13 +65,14 @@ def help(bot, update):
     #   help(), callback per /help; risponde con un messaggio contenente la lista di comandi.
     # print("command /help from:" + update.message["chat"]["username"])
     commandlist = """lista comandi:
-/voti       ricevi aggiornamenti
-/help       mostra lista comandi
-/start      mostra guida del bot
-/registra   registra un utente
-/info       informazioni sul bot
-/compiti  mostra i compiti per casa
-/argomenti  argomenti svolti
+/voti           vedi i voti più recenti
+/help           mostra lista comandi
+/start          mostra guida del bot
+/registra       registra un utente
+/info           informazioni su questo bot
+/compiti        vedi i compiti per casa
+/argomenti      vedi gli argomenti svolti
+/comunicazioni  comunicazioni e compiti in classe
     """
     bot.sendMessage(chat_id=update.message.chat_id, text=commandlist)
 
@@ -225,6 +197,7 @@ def homeworks(bot, update):
         messagecontent = "Registrare un utente prima di poter usare il comando"
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
+
 def arguments(bot, update):
     try:
 
@@ -256,16 +229,76 @@ def arguments(bot, update):
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
 
+def marks(bot, update):
+    try:
+
+        user = database.Database.getField(update.message.from_user["id"], "username_registro")
+        password = database.Database.getField(update.message.from_user["id"], "pass")
+        bot.sendMessage(chat_id=update.message.chat_id, text="Stai per ricevere aggiornamenti sui voti.")
+        schoolcode = database.Database.getField(update.message.from_user["id"], "school_code")
+        homeworkslist = fetcher.Fetcher.fetchMarks(schoolcode, user, password)
+        messagecontent = ""
+
+        for u in homeworkslist:
+            messagecontent += u
+            messagecontent += "\n\n"
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+    # gestisci caso di credenziali non corrette
+    except mechanize.FormNotFoundError:
+        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+    # gestisci caso con credenziali errate di login
+    except mechanize.ControlNotFoundError:
+        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+    # gesitsci caso con credenziali inesistenti, es: utente nuovo esegue /news senza prima registrarsi con /register
+    except TypeError:
+        messagecontent = "Registrare un utente prima di poter usare il comando"
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+
+def communications(bot, update):
+    try:
+
+        user = database.Database.getField(update.message.from_user["id"], "username_registro")
+        password = database.Database.getField(update.message.from_user["id"], "pass")
+        bot.sendMessage(chat_id=update.message.chat_id, text="Stai per ricevere aggiornamenti sulle comunicazioni.")
+        schoolcode = database.Database.getField(update.message.from_user["id"], "school_code")
+        homeworkslist = fetcher.Fetcher.fetchCommunications(schoolcode, user, password)
+        messagecontent = ""
+
+        for u in homeworkslist:
+            messagecontent += u
+            messagecontent += "\n\n"
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+    # gestisci caso di credenziali non corrette
+    except mechanize.FormNotFoundError:
+        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+    # gestisci caso con credenziali errate di login
+    except mechanize.ControlNotFoundError:
+        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
+
+    # gesitsci caso con credenziali inesistenti, es: utente nuovo esegue /news senza prima registrarsi con /register
+    except TypeError:
+        messagecontent = "Registrare un utente prima di poter usare il comando"
+        bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
 if __name__ == '__main__':
     logging.basicConfig(filename='history.log', level=logging.INFO, format='%(asctime)s %(message)s')
 
-    updater = Updater(token='146925850:AAGPyyxzr-TGGbnfMbF_735fN5jqXK9xuAE')
+    updater = Updater(token='146925850:AAEOAAdd_inKFfHPSQScQzH-h3VtiWZ5gys')
     dispatcher = updater.dispatcher
 
     #   add telegram messages and commands handlers
     dispatcher.addTelegramMessageHandler(message)
-    dispatcher.addTelegramCommandHandler('voti', news)
+    dispatcher.addTelegramCommandHandler('voti', marks)
     dispatcher.addTelegramCommandHandler('help', help)
     dispatcher.addUnknownTelegramCommandHandler(unknown)
     dispatcher.addTelegramCommandHandler('info', info)
@@ -273,6 +306,6 @@ if __name__ == '__main__':
     dispatcher.addTelegramCommandHandler('start', start)
     dispatcher.addTelegramCommandHandler('compiti', homeworks)
     dispatcher.addTelegramCommandHandler('users', users)
+    dispatcher.addTelegramCommandHandler('comunicazioni', communications)
     dispatcher.addTelegramCommandHandler('argomenti', arguments)
-
     updater.start_polling()
