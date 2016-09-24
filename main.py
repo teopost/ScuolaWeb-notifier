@@ -184,11 +184,13 @@ def homeworks(bot, update):
 
     # gestisci caso di credenziali non corrette
     except mechanize.FormNotFoundError:
-        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
+	print("sono qui")
+        messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente"
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
     # gestisci caso con credenziali errate di login
     except mechanize.ControlNotFoundError:
+	print("sono qua")
         messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
@@ -215,11 +217,13 @@ def arguments(bot, update):
 
     # gestisci caso di credenziali non corrette
     except mechanize.FormNotFoundError:
+	print("errore qua in mech.formnotfound")
         messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
     # gestisci caso con credenziali errate di login
     except mechanize.ControlNotFoundError:
+	print("l'errore è qui")
         messagecontent = "Errore durante l'autenticazione, verificare le credenziali d'accesso e registrare un nuovo utente."
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
@@ -291,9 +295,9 @@ def communications(bot, update):
         bot.sendMessage(chat_id=update.message.chat_id, text=messagecontent)
 
 if __name__ == '__main__':
-    logging.basicConfig(filename='history.log', level=logging.INFO, format='%(asctime)s %(message)s')
+    #logging.basicConfig(filename='history.log', level=logging.INFO, format='%(asctime)s %(message)s')
 
-    updater = Updater(token='146925850:AAEOAAdd_inKFfHPSQScQzH-h3VtiWZ5gys')
+    updater = Updater(token='154791779:AAEq3_LZ0gIyd_qwINsWYxsQr5uW35sxe1E')
     dispatcher = updater.dispatcher
 
     #   add telegram messages and commands handlers

@@ -32,8 +32,8 @@ class Fetcher:
     @staticmethod
     def login(schoolcode, user, password):
 
-        url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
-
+        #url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
+	url = "https://registro.itis-cesena.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
         browser = mechanize.Browser()
         browser.open(url)
         browser.select_form(name="ctl06")
@@ -49,15 +49,15 @@ class Fetcher:
     @staticmethod
     def students(schoolcode, user, password, droplistitem):
 
-        url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
-        urlhomeworkspage = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/FMp05.aspx"
+        #url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
+	url = "https://registro.itis-cesena.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
+        urlhomeworkspage = "https://registro.itis-cesena.it/scuolawebfamiglie/src/FMp05.aspx"
 
         #   effettua il login, apre la pagina Studenti->Visualizza, visualizza i compiti
         browser = mechanize.Browser()
         browser.open(url)
         #   se il codice scuola è sbagliato, il form 'ctl06' non viene trovato e un errore viene lanciato
         browser.select_form(name="ctl06")
-
         browser.form["LoginControl1$txtCodUser"] = user
         browser.form["LoginControl1$txtPassword"] = password
         #   fai il submit, non controlla se il login vada a buon fine (e che quindi ritorni la pagina home del registro)
@@ -69,7 +69,8 @@ class Fetcher:
         #   se il form 'aspenetForm' non esiste, il login è fallito, e broswer.open() ritorna una pagina diversa da quella aspettata quindi le credenziali sono errate
         browser.select_form(name="aspnetForm")
         #   va nel menu a tendina e sceglie Compiti assegnati
-        browser.form["ctl00$ContentPlaceHolder1$lstArchivio"] = [droplistitem]
+        #browser.form["ctl00$ContentPlaceHolder1$lstArchivio"] = [droplistitem]
+	browser.form["ctl00$ContentPlaceHolder1$lstGruppo"] = [droplistitem]
         #   preme il pulsante Visualizza
         page = browser.submit(name="ctl00$ContentPlaceHolder1$btnVisualizza")
         #   scarica la pagina ottenuta
