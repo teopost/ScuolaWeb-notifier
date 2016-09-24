@@ -1,0 +1,1550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><link rel="stylesheet" type="text/css" href="/scuolawebfamiglie/DXR.axd?r=1_29,1_33,1_3,1_22,1_21,1_17,1_18,1_16-v2VAc" /><title>
+	Visualizzazioni/Richieste
+</title><style type="text/css">
+	.ctl00_pnlHeader_mnuHor_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_pnlHeader_mnuHor_1 { color:Black;font-family:Verdana;font-size:12pt;text-decoration:none; }
+	.ctl00_pnlHeader_mnuHor_2 { color:Black;background-color:Transparent;font-family:Verdana;font-size:12pt;height:20px; }
+	.ctl00_pnlHeader_mnuHor_3 { font-family:Verdana;font-size:10pt; }
+	.ctl00_pnlHeader_mnuHor_4 { background-color:Transparent;padding:2px 5px 2px 5px; }
+	.ctl00_pnlHeader_mnuHor_5 { font-family:Verdana;font-size:10pt; }
+	.ctl00_pnlHeader_mnuHor_6 { background-color:#9DBDFF;padding:2px 5px 2px 5px; }
+	.ctl00_pnlHeader_mnuHor_7 { background-color:#9DBDFF; }
+	.ctl00_pnlHeader_mnuHor_8 { color:Black;font-family:Verdana;font-size:10pt; }
+	.ctl00_pnlHeader_mnuHor_9 { background-color:#9DBDFF; }
+	.ctl00_pnlHeader_mnuHor_10 { color:Black;font-family:Verdana;font-size:10pt; }
+	.ctl00_pnlHeader_mnuHor_11 { color:Black;background-color:#AADDFF;font-family:Verdana;font-size:10pt; }
+	.ctl00_pnlHeader_mnuHor_12 { color:Black;font-family:Verdana;font-size:10pt; }
+	.ctl00_pnlHeader_mnuHor_13 { color:Black;background-color:#AADDFF;font-family:Verdana;font-size:10pt; }
+
+</style></head>
+<body style="margin: 0; padding: 0;">
+    <form name="aspnetForm" method="post" action="./FMp05.aspx" id="aspnetForm" enctype="multipart/form-data">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA0Njc3NTM3NA8WAh4NRk1wMDVfQXJjaGl2aRUaCVZvdGl8Vm90aRdWb3RpfFZvdGkgcGVyIG9iaWV0dGl2aSpBc3NlbnplfEFzc2VuemUgKGRhIGNhbGVuZGFyaW8gc2NvbGFzdGljbyklQXNzZW56ZXxQcm9zcGV0dG8gZGV0dGFnbGlhdG8gYXNzZW56ZRJBc3NlbnplfEluZGljYXRvcmkhQXJnb21lbnRpIHN2b2x0aXxBcmdvbWVudGkgc3ZvbHRpI0NvbXBpdGkgYXNzZWduYXRpfENvbXBpdGkgYXNzZWduYXRpG0NvbXVuaWNhemlvbml8Q29tdW5pY2F6aW9uaStDb211bmljYXppb25pfENvbXVuaWNhemlvbmkgcGVyIGRhdGEgZXZlbnRvJUNvbXVuaWNhemlvbml8Q29tdW5pY2F6aW9uaSBwZXJzb25hbGk1UHJvdnZlZGltZW50aSBkaXNjaXBsaW5hcml8UHJvdnZlZGltZW50aSBkaXNjaXBsaW5hcmksU2NydXRpbml8U2NoZWRhIGRpIHZhbHV0YXppb25lIHByaW1vIHBlcmlvZG8lU2NydXRpbml8U2NoZWRhIGRpIHZhbHV0YXppb25lIGZpbmFsZR5TY3J1dGluaXxQYWdlbGxlIHByaW1vIHBlcmlvZG8XU2NydXRpbml8UGFnZWxsZSBGaW5hbGkyU2NydXRpbml8Q29tdW5pY2F6aW9uaSBhbGxlIGZhbWlnbGllIHByaW1vIHBlcmlvZG8uU2NydXRpbml8U2NoZWRhIGRpIHZhbHV0YXppb25lIElSQyAvIEF0dC4gYWx0Lg1EZXR0YWdsaXxGb3RvGERldHRhZ2xpfERhdGkgYW5hZ3JhZmljaRFEZXR0YWdsaXxQZXJtZXNzaRNTdGF0aXN0aWNoZXxHcmFmaWNvHlN0YXRpc3RpY2hlfEFuZGFtZW50byBnZW5lcmFsZRBEZXR0YWdsaXxEb2NlbnRpHURvY3VtZW50aXxQcm9ncmFtbWkgZGlkYXR0aWNpHURvY3VtZW50aXxEb2N1bWVudGkgZGlkYXR0aWNpO1ByZW5vdGF6aW9uZSBjb2xsb3F1aSBkb2NlbnRpfFByZW5vdGF6aW9uZSBjb2xsb3F1aSBkb2NlbnRpFgJmD2QWAgIDDxYCHgdlbmN0eXBlBRNtdWx0aXBhcnQvZm9ybS1kYXRhFgYCAQ9kFgJmD2QWAgIDD2QWCAIBD2QWAgIBDxYCHgRocmVmBQltYWluLmFzcHgWAgIBDw8WAh4EVGV4dAU7SXN0aXR1dG8gVGVjbmljbyBUZWNub2xvZ2ljbyDigJxCbGFpc2UgUGFzY2Fs4oCdIOKAkyBDZXNlbmFkZAIDD2QWAgIBD2QWAgIBDw8WAh8DBRlWaXN1YWxpenphemlvbmkvUmljaGllc3RlZGQCBQ9kFgICAQ8PFgIfAwUZVXRlbnRlOiBURU9ET1JBTkkgTE9SRU5aT2RkAgcPPCsADQEMFCsABwUXMDowLDA6MSwwOjIsMDozLDA6NCwwOjUUKwACFgQfAwUJIFN0dWRlbnRpHghJbWFnZVVybAUXLi4vSW1hZ2VzL0ljb25zLzI3MS5wbmcUKwAGBRMwOjAsMDoxLDA6MiwwOjMsMDo0FCsAAhYIHwMFGiBWaXN1YWxpenphemlvbmkvUmljaGllc3RlHgVWYWx1ZWUeC05hdmlnYXRlVXJsBRB+L3NyYy9GTXAwNS5hc3B4HwQFFi4uL0ltYWdlcy9JY29ucy8yNi5wbmdkFCsAAhYIHwMFByBBZ2VuZGEfBWUfBgUQfi9zcmMvRk1wNTYuYXNweB8EBRYuLi9JbWFnZXMvSWNvbnMvMjgucG5nZBQrAAIWCB8DBQkgUmVnaXN0cm8fBWUfBgUQfi9zcmMvRk1wMTAuYXNweB8EBRcuLi9JbWFnZXMvSWNvbnMvMzEyLnBuZ2QUKwACFgQfAwUCIC0fBWVkFCsAAhYIHwMFGCBDb25zdWx0YXppb25lIGRvY3VtZW50aR8FZR8GBRB+L3NyYy9GTXAzMy5hc3B4HwQFFy4uL0ltYWdlcy9JY29ucy8yMTIucG5nZBQrAAIWBB8DBQwgUXVlc3Rpb25hcmkfBAUXLi4vSW1hZ2VzL0ljb25zLzEzMi5wbmcUKwACBQMwOjAUKwACFggfAwUNIFF1ZXN0aW9uYXJpbx8FZR8GBRB+L3NyYy9GTXAzOS5hc3B4HwQFFy4uL0ltYWdlcy9JY29ucy8zNzQucG5nZBQrAAIWBB8DBQsgT3BlcmF6aW9uaR8EBRcuLi9JbWFnZXMvSWNvbnMvMjc3LnBuZxQrAAIFAzA6MBQrAAIWCB8DBQogQ3J1c2NvdHRpHwVlHwYFF34vc3JjL0ZNcENydXNjb3R0aS5hc3B4HwQFFy4uL0ltYWdlcy9JY29ucy8zOTUucG5nZBQrAAIWBB8DBQ0gTWFudXRlbnppb25pHwQFFi4uL0ltYWdlcy9JY29ucy81NC5wbmcUKwACBQMwOjAUKwACFggfAwUUIEltcG9zdGF6aW9uaSB1dGVudGUfBWUfBgUgfi9zcmMvRk1wSW1wb3N0YXppb25pVXRlbnRlLmFzcHgfBAUWLi4vSW1hZ2VzL0ljb25zLzUzLnBuZ2QUKwACFgQfAwUCID8fBAUXLi4vSW1hZ2VzL0ljb25zLzM2OS5wbmcUKwADBQcwOjAsMDoxFCsAAhYIHwMFDSBJbmZvcm1hemlvbmkfBWUfBgUSfi9zcmMvRk1wSW5mby5hc3B4HwQFFy4uL0ltYWdlcy9JY29ucy8yMDgucG5nZBQrAAIWCB8DBQogRG9jdW1lbnRpHwVlHwYFF34vc3JjL0ZNcERvY3VtZW50aS5hc3B4HwQFFi4uL0ltYWdlcy9JY29ucy80My5wbmdkFCsAAhYGHwMFBSBGaW5lHwYFC2xvZ291dC5hc3B4HwQFFy4uL0ltYWdlcy9JY29ucy8zOTgucG5nZGQCBQ9kFgRmD2QWHAIBDxBkEBUBFFRFT0RPUkFOSSBMT1JFTlpPIDVIFQEFODc5NjAUKwMBZxYBZmQCBQ8QZBAVCxBUdXR0ZSBsZSBtYXRlcmllK0dlc3Rpb25lIHByb2dldHRvLCBvcmdhbml6emF6aW9uZSBkJ2ltcHJlc2ELSW5mb3JtYXRpY2EdTGluZ3VhIGUgbGV0dGVyYXR1cmEgaXRhbGlhbmEOTGluZ3VhIGluZ2xlc2UKTWF0ZW1hdGljYStSZWxpZ2lvbmUgY2F0dG9saWNhIG8gYXR0aXZpdMOgIGFsdGVybmF0aXZhGlNjaWVuemUgbW90b3JpZSBlIHNwb3J0aXZlDlNpc3RlbWkgZSBSZXRpBlN0b3JpYU5UZWNuLiBlIHByb2cuIGRpIHNpc3RlbWkgaW5mb3JtYXRpY2kgZSBkaSB0ZWxlY29tLiAoYXJ0aWNvbGF6aW9uZSBpbmZvcm1hdGljYSkVCwACMzYCMTECMTMCMTICMzMCMTUCMzgCNDUCMjMCNDkUKwMLZ2dnZ2dnZ2dnZ2dkZAIHDw9kFgIeBXN0eWxlBZQEYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi9JbWFnZXMvSWNvbnMvMjgzLnBuZycpO2JhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7IGJhY2tncm91bmQtcG9zaXRpb246IGxlZnQ7YmFja2dyb3VuZC1jb2xvcjpCdXR0b25GYWNlO2JhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vSW1hZ2VzL0ljb25zLzI4My5wbmcnKTtiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0OyBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBsZWZ0O2JhY2tncm91bmQtY29sb3I6QnV0dG9uRmFjZTtiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL0ltYWdlcy9JY29ucy8yODMucG5nJyk7YmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDsgYmFja2dyb3VuZC1wb3NpdGlvbjogbGVmdDtiYWNrZ3JvdW5kLWNvbG9yOkJ1dHRvbkZhY2U7YmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi9JbWFnZXMvSWNvbnMvMjgzLnBuZycpO2JhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7IGJhY2tncm91bmQtcG9zaXRpb246IGxlZnQ7YmFja2dyb3VuZC1jb2xvcjpCdXR0b25GYWNlO2QCCQ8QZBAVDARWb3RpB0Fzc2VuemUQQXJnb21lbnRpIHN2b2x0aRFDb21waXRpIGFzc2VnbmF0aQ1Db211bmljYXppb25pGlByb3Z2ZWRpbWVudGkgZGlzY2lwbGluYXJpCFNjcnV0aW5pCERldHRhZ2xpC1N0YXRpc3RpY2hlCURvY3VtZW50aR1QcmVub3RhemlvbmUgY29sbG9xdWkgZG9jZW50aQ9FbGVuY28gY29tcGxldG8VDARWb3RpB0Fzc2VuemUQQXJnb21lbnRpIHN2b2x0aRFDb21waXRpIGFzc2VnbmF0aQ1Db211bmljYXppb25pGlByb3Z2ZWRpbWVudGkgZGlzY2lwbGluYXJpCFNjcnV0aW5pCERldHRhZ2xpC1N0YXRpc3RpY2hlCURvY3VtZW50aR1QcmVub3RhemlvbmUgY29sbG9xdWkgZG9jZW50aQ9FbGVuY28gY29tcGxldG8UKwMMZ2dnZ2dnZ2dnZ2dnFgECA2QCCw8QZBAVARFDb21waXRpIGFzc2VnbmF0aRUBEUNvbXBpdGkgYXNzZWduYXRpFCsDAWdkZAINDxBkEBUDD0Fubm8gc2NvbGFzdGljbwsxwrAgcGVyaW9kbwsywrAgcGVyaW9kbxUDAkFTAjFQAjJQFCsDA2dnZ2RkAg8PFgIeB1Zpc2libGVoZAIRDw8WAh8DZWRkAhMPFgIfCGhkAhUPZBYKAgEPPCsACAEADxYCHg5fIVVzZVZpZXdTdGF0ZWdkFgJmD2QWAmYPZBYCZg9kFgICAQ9kFgJmD2QWAmYPZBYCAgEPZBYGAgEPEGRkFgBkAgUPEGRkFgBkAgcPEGRkFgBkAgMPPCsACAEADxYCHwlnZBYCZg9kFgJmD2QWAmYPZBYCAgEPZBYCZg9kFgJmD2QWAgIBD2QWAgIBDxBkZBYAZAIFDzwrAAgBAA8WAh8JZ2RkAgcPDxYCHg9ndGJfRW5kQ2FsbEJhY2sFB0NIQU5HRURkFgYCAQ8PFgoeCUJhY2tDb2xvcgnu8vH/HgtCb3JkZXJTdHlsZQsqJVN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuQm9yZGVyU3R5bGUEHgtCb3JkZXJDb2xvcgojHgtCb3JkZXJXaWR0aBsAAAAAAADwPwEAAAAeBF8hU0ICeGRkAgMPPCsACAEADxYCHwlnZBYCZg9kFgJmD2QWAmYPZBYCAgEPZBYCZg9kFgJmD2QWAgIBD2QWAgIBDxBkZBYAZAIFDzwrAAgBAA8WAh8JZ2RkAgkPPCsAIAcADxYGHg9EYXRhU291cmNlQm91bmRnHg1jYWxsYmFja1N0YXRlBaABQndFSEFRSUZVM1JoZEdVSGFRY05Cd0FDQVFiLy93SUFCd0VDQVFjQ0FnRUhBd0lCQndRQ0FRY0ZBZ0VIQmdJQkJ3Y0NBUWNJQWdFSENRSUJCd29DQVFjTEFnRUhBQWNBQndBSEFBSUFCUUFBQUlBSkFnQUhBQWtDQUFJQUF3Y0VBZ0FIQUFJQkJ3QUhBQUlBQWdFSEFBY0FCd0FIQUE9PR4MS2V5RmllbGROYW1lBQtDb2xsb3F1aV9JZGQDFCsAARYGHgtFbmRDYWxsYmFjawX/A2Z1bmN0aW9uKHMsIGUpIHsgDQogICBpZiAocy5jcF9ncmRtbnUpIHsgDQogICAgICBpZiAocy5jcF9ncmRtbnUuaW5kZXhPZigiRlVOWklPTkkuUkFHR1JVUFBBTUVOVE8iLCBzLmNwX2dyZG1udSAtICJGVU5aSU9OSS5SQUdHUlVQUEFNRU5UTyIubGVuZ3RoKSAhPT0gLTEpIHsgDQogICAgICAgICBpZiAoZ3JkQ29sICE9ICIiKSB7IA0KICAgICAgICAgICAgY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9ndGJDb2xsX3BvcHVwRnVuelJhZ2cuUGVyZm9ybUNhbGxiYWNrKHMuY3BfZ3JkbW51ICsgJ3wnICsgZ3JkUm93ICsgJ3wnICsgZ3JkQ29sKTsgDQogICAgICAgICAgICBkZWxldGUgKHMuY3BfZ3JkbW51KTsgDQogICAgICAgICAgICBjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX2d0YkNvbGxfcG9wdXBGdW56UmFnZy5TaG93KCk7IA0KICAgICAgICAgfSANCiAgICAgIH0gDQogICB9IGVsc2Ugew0KICAgZ3JpZENvbGxfRW5kQ2FsbGJhY2suY2FsbCh1bmRlZmluZWQsIHMsIGUpOyANCiAgIH0NCn0eFENvbnRleHRNZW51SXRlbUNsaWNrBVNmdW5jdGlvbihzZW5kZXIsIGFyZ3MpIHsgDQogICBhcmdzLnByb2Nlc3NPblNlcnZlcj10cnVlOyANCiAgIHVzZVBvc3RCYWNrPWZhbHNlOw0KfR4LQ29udGV4dE1lbnUFkgRmdW5jdGlvbiBPbkNvbnRleHRNZW51KHMsIGUpIHsgICAgZ3JkUm93ID0gZS5pbmRleDsgICAgaWYgKGUuaHRtbEV2ZW50LnRhcmdldC5hdHRyaWJ1dGVzLmNvbHVtbiAhPSB1bmRlZmluZWQpIHsgICAgICBncmRDb2wgPSBlLmh0bWxFdmVudC50YXJnZXQuYXR0cmlidXRlcy5jb2x1bW4udmFsdWU7ICAgfSBlbHNlIGlmIChlLmh0bWxFdmVudC50YXJnZXQucGFyZW50RWxlbWVudC5hdHRyaWJ1dGVzLmNvbHVtbiAhPSB1bmRlZmluZWQpIHsgICAgICBncmRDb2wgPSBlLmh0bWxFdmVudC50YXJnZXQucGFyZW50RWxlbWVudC5hdHRyaWJ1dGVzLmNvbHVtbi52YWx1ZTsgICB9IGVsc2UgaWYgKGUuaHRtbEV2ZW50LnRhcmdldC5wYXJlbnRFbGVtZW50LnBhcmVudE5vZGUuYXR0cmlidXRlcy5jb2x1bW4gIT0gdW5kZWZpbmVkKSB7ICAgICAgZ3JkQ29sID0gZS5odG1sRXZlbnQudGFyZ2V0LnBhcmVudEVsZW1lbnQucGFyZW50Tm9kZS5hdHRyaWJ1dGVzLmNvbHVtbi52YWx1ZTsgICB9IGVsc2UgeyAgICAgIGdyZENvbCA9ICIiOyAgIH19IAYPZBAWDAIBAgICAwIEAgUCBgIHAggCCQIKAgsCDBYMPCsACwEKFCsAAxYGHglTb3J0SW5kZXgC/////w8eCkdyb3VwSW5kZXgC/////w8eCVNvcnRPcmRlcgspekRldkV4cHJlc3MuRGF0YS5Db2x1bW5Tb3J0T3JkZXIsIERldkV4cHJlc3MuRGF0YS52MTUuMiwgVmVyc2lvbj0xNS4yLjkuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhABQrAAEWAh4TQXV0b0ZpbHRlckNvbmRpdGlvbgspfERldkV4cHJlc3MuV2ViLkF1dG9GaWx0ZXJDb25kaXRpb24sIERldkV4cHJlc3MuV2ViLnYxNS4yLCBWZXJzaW9uPTE1LjIuOS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEDZDwrAAsCABYCHg9Db2xWaXNpYmxlSW5kZXgCAQoUKwADFgYfFgL/////Dx8XAv////8PHxgLKwUAFCsAARYCHxkLKwYDZDwrAAsCABYCHxoCAgoUKwADFgYfFgL/////Dx8XAv////8PHxgLKwUAFCsAARYCHxkLKwYDZDwrAAsCABYCHxoCAwoUKwADFgYfFgL/////Dx8XAv////8PHxgLKwUAFCsAARYCHxkLKwYDZDwrAAsCABYCHxoCBAoUKwADFgYfFgL/////Dx8XAv////8PHxgLKwUAFCsAARYCHxkLKwYDZDwrAAsCABYCHxoCBQoUKwADFgYfFgL/////Dx8XAv////8PHxgLKwUAFCsAARYCHxkLKwYDZDwrAAsCABYCHxoCBgoUKwADFgYfFgL/////Dx8XAv////8PHxgLKwUAFCsAARYCHxkLKwYDZDwrAAsCABYCHxoCBwoUKwADFgYfFgL/////Dx8XAv////8PHxgLKwUAFCsAARYCHxkLKwYDZDwrAAsCABYCHxoCCAoUKwADFgYfFgL/////Dx8XAv////8PHxgLKwUAFCsAARYCHxkLKwYDZDwrAAsCABYCHxoCCQoUKwADFgYfFgL/////Dx8XAv////8PHxgLKwUAFCsAARYCHxkLKwYDZDwrAAsCABYCHxoCCgoUKwADFgYfFgL/////Dx8XAv////8PHxgLKwUAFCsAARYCHxkLKwYDZDwrAAsCABYCHxoCCwoUKwAEFgYfFgL/////Dx8XAv////8PHxgLKwUAZBQrAAEWAh8ZCysGA2QPFgwCAQIBAgECAQIBAgECAQIBAgECAQIBAgIWAgV7RGV2RXhwcmVzcy5XZWIuR3JpZFZpZXdEYXRhQ29sdW1uLCBEZXZFeHByZXNzLldlYi52MTUuMiwgVmVyc2lvbj0xNS4yLjkuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhBX9EZXZFeHByZXNzLldlYi5HcmlkVmlld0RhdGFNZW1vQ29sdW1uLCBEZXZFeHByZXNzLldlYi52MTUuMiwgVmVyc2lvbj0xNS4yLjkuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhCRQrAAIWAh4ETW9kZQIDZBsUKwABFgQeDUNvbW1hbmRVcGRhdGUFBVNhbHZhHg1Db21tYW5kQ2FuY2VsBQdBbm51bGxhHDwrAAUBABYCHgdFbmFibGVkZx48KwAGAQUUKwACZGRkAhcPDxYCHwhnZBYEAgEPDxYCHwoFB0NIQU5HRURkFgYCAQ8PFgofCwnu8vH/HwwLKwQEHw0KIx8OGwAAAAAAAPA/AQAAAB8PAnhkZAIDDzwrAAgBAA8WAh8JZ2RkAgUPPCsACAEADxYCHwlnZGQCAw88KwAgBwAPFggfEGceE0F1dG9HZW5lcmF0ZUNvbHVtbnNnHxEFWEJ3RUhBUUlGVTNSaGRHVUhOQWNBQndBSEFBY0FCd0FDQUFVQUFBQ0FDUUlBQndBSkFnQUNBQU1IQkFJQUJ3QUNBUWNBQndBQ0FBSUJCd0FIQUFjQUJ3QT0fEmVkAxQrAAEWBh8TBdMDZnVuY3Rpb24ocywgZSkgeyANCiAgIGlmIChzLmNwX2dyZG1udSkgeyANCiAgICAgIGlmIChzLmNwX2dyZG1udS5pbmRleE9mKCJGVU5aSU9OSS5SQUdHUlVQUEFNRU5UTyIsIHMuY3BfZ3JkbW51IC0gIkZVTlpJT05JLlJBR0dSVVBQQU1FTlRPIi5sZW5ndGgpICE9PSAtMSkgeyANCiAgICAgICAgIGlmIChncmRDb2wgIT0gIiIpIHsgDQogICAgICAgICAgICBjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX2d0YkRldHRfcG9wdXBGdW56UmFnZy5QZXJmb3JtQ2FsbGJhY2socy5jcF9ncmRtbnUgKyAnfCcgKyBncmRSb3cgKyAnfCcgKyBncmRDb2wpOyANCiAgICAgICAgICAgIGRlbGV0ZSAocy5jcF9ncmRtbnUpOyANCiAgICAgICAgICAgIGN0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfZ3RiRGV0dF9wb3B1cEZ1bnpSYWdnLlNob3coKTsgDQogICAgICAgICB9IA0KICAgICAgfSANCiAgIH0gZWxzZSB7DQogICANCiAgIH0NCn0fFAVTZnVuY3Rpb24oc2VuZGVyLCBhcmdzKSB7IA0KICAgYXJncy5wcm9jZXNzT25TZXJ2ZXI9dHJ1ZTsgDQogICB1c2VQb3N0QmFjaz1mYWxzZTsNCn0fFQWSBGZ1bmN0aW9uIE9uQ29udGV4dE1lbnUocywgZSkgeyAgICBncmRSb3cgPSBlLmluZGV4OyAgICBpZiAoZS5odG1sRXZlbnQudGFyZ2V0LmF0dHJpYnV0ZXMuY29sdW1uICE9IHVuZGVmaW5lZCkgeyAgICAgIGdyZENvbCA9IGUuaHRtbEV2ZW50LnRhcmdldC5hdHRyaWJ1dGVzLmNvbHVtbi52YWx1ZTsgICB9IGVsc2UgaWYgKGUuaHRtbEV2ZW50LnRhcmdldC5wYXJlbnRFbGVtZW50LmF0dHJpYnV0ZXMuY29sdW1uICE9IHVuZGVmaW5lZCkgeyAgICAgIGdyZENvbCA9IGUuaHRtbEV2ZW50LnRhcmdldC5wYXJlbnRFbGVtZW50LmF0dHJpYnV0ZXMuY29sdW1uLnZhbHVlOyAgIH0gZWxzZSBpZiAoZS5odG1sRXZlbnQudGFyZ2V0LnBhcmVudEVsZW1lbnQucGFyZW50Tm9kZS5hdHRyaWJ1dGVzLmNvbHVtbiAhPSB1bmRlZmluZWQpIHsgICAgICBncmRDb2wgPSBlLmh0bWxFdmVudC50YXJnZXQucGFyZW50RWxlbWVudC5wYXJlbnROb2RlLmF0dHJpYnV0ZXMuY29sdW1uLnZhbHVlOyAgIH0gZWxzZSB7ICAgICAgZ3JkQ29sID0gIiI7ICAgfX0gBg8WAh4KSXNTYXZlZEFsbGcPFCsACDwrAAsCABYEHg5SdW50aW1lQ3JlYXRlZGcfGmYKFCsABBYKHglGaWVsZE5hbWUFBERhdGEeCFJlYWRPbmx5aB8WAv////8PHxcC/////w8fGAsrBQA8KwAOAgs8KwAIAQcUKwACZDLiAQABAAAA/////wEAAAAAAAAABAEAAACBAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbU3lzdGVtLkRhdGVUaW1lLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAGX2l0ZW1zBV9zaXplCF92ZXJzaW9uAwAAEVN5c3RlbS5EYXRlVGltZVtdCAgJAgAAAAAAAAAAAAAADwIAAAAAAAAADQsMFCsAAmQ8KwALAQYUKwABFgIeBE1hc2sFBUhIOm1tFCsAARYCHxkLKwYDZBQrAAsWBB8hZx8aAgFkPCsADAEAFgIeD0hvcml6b250YWxBbGlnbgsqKVN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuSG9yaXpvbnRhbEFsaWduAWRkZGRkZGQUKwAEFgofIgULRGVzY3JpemlvbmUfI2gfFgL/////Dx8XAv////8PHxgLKwUAZBQrAAEWAh8ZCysGA2QUKwALFgQfIWcfGgICZDwrAAwBABYCHyULKwcBZGRkZGRkZBQrAAQWCh8iBQ1EYXRhIGNvbnNlZ25hHyNoHxYC/////w8fFwL/////Dx8YCysFADwrAA4CCzwrAAgBBxQrAAJkMuIBAAEAAAD/////AQAAAAAAAAAEAQAAAIEBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tTeXN0ZW0uRGF0ZVRpbWUsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24DAAARU3lzdGVtLkRhdGVUaW1lW10ICAkCAAAAAAAAAAAAAAAPAgAAAAAAAAANCwwUKwACZDwrAAsBBhQrAAEWAh8kBQVISDptbRQrAAEWAh8ZCysGA2QUKwALFgQfIWcfGgIDZDwrAAwBABYCHyULKwcBZGRkZGRkZBQrAAQWCh8iBQdEb2NlbnRlHyNoHxYC/////w8fFwL/////Dx8YCysFAGQUKwABFgIfGQsrBgNkFCsACxYEHyFnHxoCBGQ8KwAMAQAWAh8lCysHAWRkZGRkZGQUKwAEFgofIgUHTWF0ZXJpYR8jaB8WAv////8PHxcC/////w8fGAsrBQBkFCsAARYCHxkLKwYDZBQrAAsWBh8hZx8aAgUeCkNvbFZpc2libGVoZDwrAAwBABYCHyULKwcBZGRkZGRkZBQrAAQWCh8iBQpDb21waXRpX0lkHyNoHxYC/////w8fFwL/////Dx8YCysFAGQUKwABFgIfGQsrBgNkFCsACxYGHyFnHxoCBh8maGQ8KwAMAQAWAh8lCysHAWRkZGRkZGQUKwAEFgofIgUFRmlsZXMfI2gfFgL/////Dx8XAv////8PHxgLKwUAZBQrAAEWAh8ZCysGA2QUKwALFgQfIWcfGgIHZDwrAAwBABYCHyULKwcBZGRkZGRkZBQrAAQWCh8iBQhBbGxlZ2F0aR8jaB8WAv////8PHxcC/////w8fGAsrBQBkFCsAARYCHxkLKwYDZA8UKwEIAgECAgIBAgICAgICAgICAhYCBX9EZXZFeHByZXNzLldlYi5HcmlkVmlld0RhdGFEYXRlQ29sdW1uLCBEZXZFeHByZXNzLldlYi52MTUuMiwgVmVyc2lvbj0xNS4yLjkuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhBX9EZXZFeHByZXNzLldlYi5HcmlkVmlld0RhdGFUZXh0Q29sdW1uLCBEZXZFeHByZXNzLldlYi52MTUuMiwgVmVyc2lvbj0xNS4yLjkuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhCRQrAAIWAh8bAgNkGxQrAAEWBB8cBQVTYWx2YR8dBQdBbm51bGxhHDwrAAUBABYCHx5nHjwrAAYBBRQrAAJkZGQCGQ8PFgIfA2VkZAIbDxYCHwhnZAIdDw8WAh8DZWRkAgoPPCsACAIADxYCHwlnZAY8KwASAQAWDB4OU2hvd09uUGFnZUxvYWRoHgNUb3BmHglDb2xsYXBzZWRoHgZQaW5uZWRoHglNYXhpbWl6ZWRoHgRMZWZ0ZhYCZg9kFgJmD2QWAmYPZBYCAgEPZBYCZg9kFgJmD2QWAgIBD2QWBAIJD2QWBAIBDxQrAAYPFgIfBWRkZGQ8KwAOAQs8KwAIAQcUKwACZDLiAQABAAAA/////wEAAAAAAAAABAEAAACBAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbU3lzdGVtLkRhdGVUaW1lLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAGX2l0ZW1zBV9zaXplCF92ZXJzaW9uAwAAEVN5c3RlbS5EYXRlVGltZVtdCAgJAgAAAAAAAAAAAAAADwIAAAAAAAAADQtkZGQCAw8QZGQWAGQCDQ9kFgICAQ9kFgICAQ88KwAOAQAPFgIeDkZpbGVJbnB1dENvdW50AgFkZAIHD2QWAmYPZBYIZg9kFgICAQ9kFgICAQ9kFgYCAQ9kFgICAQ8WAh8DZWQCAg9kFgQCAQ8PFgIfAwUJMjAxMS0yMDE2ZGQCAw8PFgIfAwUkUG9ydGFsZSB2ZXIuIDEuOC42MTA4IGRlbCAyMS8wOS8yMDE2ZGQCAw9kFgICAQ8PFgIfAwU1MDA2OTImbmJzcDsmbmJzcDsmbmJzcDsyNC8wOS8yMDE2Jm5ic3A7Jm5ic3A7Jm5ic3A7MDVkZAIBDzwrAAgCAA8WAh8JZ2QGPCsAEgEAFgwfJ2gfKGYfKWgfKmgfK2gfLGZkAgIPPCsACAIADxYCHwlnZAY8KwASAQAWDB8naB8oZh8paB8qaB8raB8sZmQCAw8WAh8DBbYEPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPg0KICAgIHZhciBfZ2FxID0gX2dhcSB8fCBbXTsNCiAgICBfZ2FxLnB1c2goWydfc2V0QWNjb3VudCcsICdVQS0xOTI1Njk1MS0xNCddKTsNCiAgICBfZ2FxLnB1c2goWydfc2V0Q3VzdG9tVmFyJywgMSwgJ1NjdW9sYScsICdGT1RGMDEwMDA4JywgM10pOw0KICAgIF9nYXEucHVzaChbJ190cmFja1BhZ2V2aWV3J10pOw0KDQogICAgKGZ1bmN0aW9uKCkgew0KICAgICAgdmFyIGdhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7IGdhLnR5cGUgPSAndGV4dC9qYXZhc2NyaXB0JzsgZ2EuYXN5bmMgPSB0cnVlOw0KICAgICAgZ2Euc3JjID0gKCdodHRwczonID09IGRvY3VtZW50LmxvY2F0aW9uLnByb3RvY29sID8gJ2h0dHBzOi8vc3NsJyA6ICdodHRwOi8vd3d3JykgKyAnLmdvb2dsZS1hbmFseXRpY3MuY29tL2dhLmpzJzsNCiAgICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOyBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGdhLCBzKTsNCiAgICB9KSgpOw0KPC9zY3JpcHQ+DQpkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYQBSVjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd0YkRldHQkbW51BS5jdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd0YkRldHQkcG9wdXBFc3BvcnRhBS9jdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd0YkRldHQkcG9wdXBGdW56UmFnZwUhY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRncmREZXR0BTVjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGdyZERldHQkY3RsMDAkRFhFZGl0b3IwJERERAU7Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRncmREZXR0JGN0bDAwJERYRWRpdG9yMCREREQkQyRGTlAFNWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3JkRGV0dCRjdGwwMCREWEVkaXRvcjIkREREBTtjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGdyZERldHQkY3RsMDAkRFhFZGl0b3IyJERERCRDJEZOUAU6Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRncmREZXR0JERYQ29udGV4dE1lbnVfR3JvdXBQYW5lbAU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRncmREZXR0JERYQ29udGV4dE1lbnVfUm93cwU2Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRncmREZXR0JERYQ29udGV4dE1lbnVfRm9vdGVyBS5jdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHBvcHVwR2l1c3RpZmljYXppb25lBVdjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHBvcHVwR2l1c3RpZmljYXppb25lJHBvcHVwR2l1c3RpZmljYXppb25lX2R0cERhdGEkdHh0RGF0YSREREQFXWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkcG9wdXBHaXVzdGlmaWNhemlvbmUkcG9wdXBHaXVzdGlmaWNhemlvbmVfZHRwRGF0YSR0eHREYXRhJERERCRDJEZOUAUeY3RsMDAkcG5sRm9vdGVyJHBvcHVwU2hvd0Vycm9yBRxjdGwwMCRwbmxGb290ZXIkcG9wdXBTaG93TXNnkX/I3GCRgrzZQWqMMrKrf/uOboLJgB9rQAmUiLSQiW0=" />
+
+<div>
+
+
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/scuolawebfamiglie/WebResource.axd?d=BY1jYzGWC__4AA6ujTxbwM7HYGX9o46n6y-UVmMEkW1Sm-0za8x8oRjLJljwXbQslHz0xx03H4rREU2RTgySbsUMDM4IZIhY_OOlyCf-6W01&amp;t=635875548900000000" type="text/javascript"></script>
+
+
+<script src="/scuolawebfamiglie/ScriptResource.axd?d=E2VYy696wWx6WaBAU3RUHqCfk9XD5AUhV2iKy4vN5Pt5wz0s5OCc4kjyX6fKgkSy7kNnx2mTWNAxArSv43Kw88voqz6NgEsiGahuu691n4M4h9DSWYv2p0odEFBwd1TY8ot6AvnXRpDzQ6_VAzQ3Rg2&amp;t=361e7a19" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"it-IT","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":".","CurrencySymbol":"€","NaNSymbol":"Non un numero","CurrencyNegativePattern":9,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-Infinito","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":".","CurrencyPositivePattern":2,"PositiveInfinitySymbol":"+Infinito","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":".","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402297199999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":1,"CalendarWeekRule":2,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["dom","lun","mar","mer","gio","ven","sab"],"ShortestDayNames":["do","lu","ma","me","gi","ve","sa"],"DayNames":["domenica","lunedì","martedì","mercoledì","giovedì","venerdì","sabato"],"AbbreviatedMonthNames":["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic",""],"MonthNames":["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre",""],"IsReadOnly":true,"NativeCalendarName":"calendario gregoriano","AbbreviatedMonthGenitiveNames":["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic",""],"MonthGenitiveNames":["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre",""]},"eras":[1,"d.C.",null,0]};//]]>
+</script>
+
+<script src="/scuolawebfamiglie/ScriptResource.axd?d=zsdjIKEtA7olmciDa0GAalVO0wpG01no-P6IPmNUAGY0bfD9A42sGlU_wUcQQDjgb6hCHmLv6_s-OnJz1LfR4xW1A6L2POgJwPtOPFHmBvwdJ2MFu7HITKmuRQK6ihTS8C7mXiIrhTfiadM5wRttxw2&amp;t=734d43f5" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/scuolawebfamiglie/ScriptResource.axd?d=S5uaHCdoogxFj71BPAmGElWHn_vNc5KjAuaAEGaNzhi24W5Haq19Uu74sMBjcrb-r2GGHDRc-fie6GEj1kX_4JHq-qciLtTcWWwoazYeru1bJVaOEq3QulvJ5ra_yJb0zUhvMLLndpF2s5c7rJpFBg2&amp;t=734d43f5" type="text/javascript"></script>
+        <div>
+	
+
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$pnlHeader$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+	//]]>
+</script>
+
+
+    <script language='javascript'>
+        function addClickBehavior(menuTable) {
+            var tbody = menuTable.getElementsByTagName("TBODY")[0];
+            var tr = tbody.getElementsByTagName("TR")[0];
+
+            for (var i = 0; i < tr.childNodes.length; i++) {
+                var td = tr.childNodes[i];
+                if (td.tagName && td.tagName.toLowerCase() == 'td') {
+                    var anchor = td.getElementsByTagName("A")[0];
+                    if (anchor) {
+
+                        var onClick = td.onmouseover;
+                        td.onclick =
+                (function (el, method) {
+                    return function (evt) {
+                        method.call(el);
+                        if (window.event) {
+                            evt = window.event
+                        }
+                        evt.cancelBubble = true;
+                    };
+                })(td, onClick);
+                        td.onmouseover =
+                (function (el) {
+                    return function () {
+                        Menu_HoverRoot(el);
+                    };
+                })(td);
+                        //add cursor style
+                        anchor.style.cursor = "default";
+                        anchor.onclick = function () { return false; };
+                        //td.onmouseout = null;
+                    }
+                }
+            }
+        }
+        function WebForm_RemoveClassName(element, className) {
+            var current = element.className;
+            var oldLength = -1;
+
+            if (current) {
+                while (oldLength != current.length) {
+                    if (current.substring
+          (current.length - className.length - 1,
+           current.length) == ' ' + className) {
+                        element.className =
+             current.substring
+             (0, current.length - className.length - 1);
+                        oldLength = current.length;
+                        current = element.className;
+                        continue;
+                    }
+                    if (current == className) {
+                        element.className = "";
+                        oldLength = current.length;
+                        current = element.className;
+                        continue;
+                    }
+                    var index = current.indexOf(' ' + className + ' ');
+                    if (index != -1) {
+                        element.className =
+             current.substring
+             (0, index) +
+             current.substring
+              (index + className.length + 2, current.length);
+                        oldLength = current.length;
+                        current = element.className;
+                        continue;
+                    }
+                    if (current.substring
+                      (0, className.length) == className + ' ') {
+                        element.className =
+             current.substring
+                      (className.length + 1, current.length);
+                    }
+                    current = element.className;
+                    oldLength = current.length;
+                }
+            }
+        }
+        function Menu_HoverRoot(item) {
+            var node = (item.tagName.toLowerCase() == "td") ?
+                item :
+    item.cells[0];
+            var data = Menu_GetData(item);
+            if (!data) {
+                return null;
+            }
+            var nodeTable = WebForm_GetElementByTagName(node, "table");
+            if (data.staticHoverClass) {
+                //avoids adding the same class twice
+
+                nodeTable.hoverClass = data.staticHoverClass;
+                WebForm_AppendToClassName(nodeTable, data.staticHoverClass);
+
+            }
+            node = nodeTable.rows[0].cells[0].childNodes[0];
+            if (data.staticHoverHyperLinkClass) {
+
+                node.hoverHyperLinkClass = data.staticHoverHyperLinkClass;
+                WebForm_AppendToClassName
+       (node, data.staticHoverHyperLinkClass);
+
+            }
+            return node;
+        }
+    </script>
+
+    <div id="ctl00_pnlHeader_pnlMPHeader" style="position: fixed; left: 0px; top: 0px; width: 100%; background-image: url(&#39;../Images/GradienteMenu.gif&#39;); background-repeat: repeat-x; z-index:9999;">
+        <table style="border: 0px; width: 100%;">
+            <tr>
+                <td id="ctl00_pnlHeader_tdHeaderAzienda" width="40%">
+                    <div style="text-align: left; color: Black; font-weight: bolder; font-family: Verdana; font-size: 11px;">
+                        <a href="main.aspx" id="ctl00_pnlHeader_lnkLogin" style="color: Black;">
+                            <span id="ctl00_pnlHeader_lblSocieta">Istituto Tecnico Tecnologico “Blaise Pascal” – Cesena</span>
+                        </a>
+                    </div>
+                </td>
+	
+                <td id="ctl00_pnlHeader_tdHeaderTitolo">
+                    <div id="ctl00_pnlHeader_divTitoloMP" style="text-align: center; color: Blue; font-weight: bolder; font-family: Verdana; font-size:12px;">
+                        <span id="ctl00_pnlHeader_lblTitoloMP">Visualizzazioni/Richieste</span>
+                    </div>
+                </td>
+	
+                <td id="ctl00_pnlHeader_tdHeaderUtente" width="40%">
+                    <div style="text-align: right; color: Black; font-weight: bolder; font-family: Verdana; font-size:11px;">
+                        <span id="ctl00_pnlHeader_lblUtente">Utente: TEODORANI LORENZO</span>&nbsp;&nbsp;
+                    </div>
+                </td>
+	
+            </tr>
+        </table>
+        <a href="#ctl00_pnlHeader_mnuHor_SkipLink"><img alt="Skip Navigation Links" src="/scuolawebfamiglie/WebResource.axd?d=eKkiA0Dl667HZ6veLo0VyvEHX9Czgk0d0yxJbSj_qOqFzPyODZRkEXjh2X4m4cZBjDtItdtsd4S__LzmUKr_pNJCiboeUr_Ho6p5iowPhuo1&amp;t=635875548900000000" width="0" height="0" style="border-width:0px;" /></a><table id="ctl00_pnlHeader_mnuHor" class="ctl00_pnlHeader_mnuHor_2" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn0"><table class="ctl00_pnlHeader_mnuHor_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_3" href="javascript:__doPostBack(&#39;ctl00$pnlHeader$mnuHor&#39;,&#39; Studenti&#39;)"><img src="../Images/Icons/271.png" alt="" style="border-style:none;vertical-align:middle;" /> Studenti</a></td><td style="width:0;"><img src="/scuolawebfamiglie/WebResource.axd?d=XQVu2WjsrWP7ftGtnPnEPtA2-5id1GjfTgnb3tUF9UdJc32XI09NHlBSlOxMWVGXyTU9DWnvXHwC1jl53nn2-ea0QofmAEZ30I__ADVQoIE1&amp;t=635875548900000000" alt="Expand  Studenti" style="border-style:none;vertical-align:middle;" /></td>
+				</tr>
+			</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn1"><table class="ctl00_pnlHeader_mnuHor_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_3" href="javascript:__doPostBack(&#39;ctl00$pnlHeader$mnuHor&#39;,&#39; Questionari&#39;)"><img src="../Images/Icons/132.png" alt="" style="border-style:none;vertical-align:middle;" /> Questionari</a></td><td style="width:0;"><img src="/scuolawebfamiglie/WebResource.axd?d=XQVu2WjsrWP7ftGtnPnEPtA2-5id1GjfTgnb3tUF9UdJc32XI09NHlBSlOxMWVGXyTU9DWnvXHwC1jl53nn2-ea0QofmAEZ30I__ADVQoIE1&amp;t=635875548900000000" alt="Expand  Questionari" style="border-style:none;vertical-align:middle;" /></td>
+				</tr>
+			</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn2"><table class="ctl00_pnlHeader_mnuHor_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_3" href="javascript:__doPostBack(&#39;ctl00$pnlHeader$mnuHor&#39;,&#39; Operazioni&#39;)"><img src="../Images/Icons/277.png" alt="" style="border-style:none;vertical-align:middle;" /> Operazioni</a></td><td style="width:0;"><img src="/scuolawebfamiglie/WebResource.axd?d=XQVu2WjsrWP7ftGtnPnEPtA2-5id1GjfTgnb3tUF9UdJc32XI09NHlBSlOxMWVGXyTU9DWnvXHwC1jl53nn2-ea0QofmAEZ30I__ADVQoIE1&amp;t=635875548900000000" alt="Expand  Operazioni" style="border-style:none;vertical-align:middle;" /></td>
+				</tr>
+			</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn3"><table class="ctl00_pnlHeader_mnuHor_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_3" href="javascript:__doPostBack(&#39;ctl00$pnlHeader$mnuHor&#39;,&#39; Manutenzioni&#39;)"><img src="../Images/Icons/54.png" alt="" style="border-style:none;vertical-align:middle;" /> Manutenzioni</a></td><td style="width:0;"><img src="/scuolawebfamiglie/WebResource.axd?d=XQVu2WjsrWP7ftGtnPnEPtA2-5id1GjfTgnb3tUF9UdJc32XI09NHlBSlOxMWVGXyTU9DWnvXHwC1jl53nn2-ea0QofmAEZ30I__ADVQoIE1&amp;t=635875548900000000" alt="Expand  Manutenzioni" style="border-style:none;vertical-align:middle;" /></td>
+				</tr>
+			</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn4"><table class="ctl00_pnlHeader_mnuHor_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_3" href="javascript:__doPostBack(&#39;ctl00$pnlHeader$mnuHor&#39;,&#39; ?&#39;)"><img src="../Images/Icons/369.png" alt="" style="border-style:none;vertical-align:middle;" /> ?</a></td><td style="width:0;"><img src="/scuolawebfamiglie/WebResource.axd?d=XQVu2WjsrWP7ftGtnPnEPtA2-5id1GjfTgnb3tUF9UdJc32XI09NHlBSlOxMWVGXyTU9DWnvXHwC1jl53nn2-ea0QofmAEZ30I__ADVQoIE1&amp;t=635875548900000000" alt="Expand  ?" style="border-style:none;vertical-align:middle;" /></td>
+				</tr>
+			</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn5"><table class="ctl00_pnlHeader_mnuHor_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_3" href="logout.aspx"><img src="../Images/Icons/398.png" alt="" style="border-style:none;vertical-align:middle;" /> Fine</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div id="ctl00_pnlHeader_mnuHorn0Items" class="ctl00_pnlHeader_mnuHor_0 ctl00_pnlHeader_mnuHor_7">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn6">
+				<td><table class="ctl00_pnlHeader_mnuHor_6" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_5" href="FMp05.aspx"><img src="../Images/Icons/26.png" alt="" style="border-style:none;vertical-align:middle;" /> Visualizzazioni/Richieste</a></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn7">
+				<td><table class="ctl00_pnlHeader_mnuHor_6" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_5" href="FMp56.aspx"><img src="../Images/Icons/28.png" alt="" style="border-style:none;vertical-align:middle;" /> Agenda</a></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn8">
+				<td><table class="ctl00_pnlHeader_mnuHor_6" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_5" href="FMp10.aspx"><img src="../Images/Icons/312.png" alt="" style="border-style:none;vertical-align:middle;" /> Registro</a></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn9">
+				<td><table class="ctl00_pnlHeader_mnuHor_6" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_5" href="javascript:__doPostBack(&#39;ctl00$pnlHeader$mnuHor&#39;,&#39; Studenti\\&#39;)"> -</a></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn10">
+				<td><table class="ctl00_pnlHeader_mnuHor_6" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_5" href="FMp33.aspx"><img src="../Images/Icons/212.png" alt="" style="border-style:none;vertical-align:middle;" /> Consultazione documenti</a></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><div class="ctl00_pnlHeader_mnuHor_6 ctl00_pnlHeader_mnuHor_0" id="ctl00_pnlHeader_mnuHorn0ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/scuolawebfamiglie/WebResource.axd?d=oprBSbqCK7_5crsP9om0EWmSl_W7_8YwFTJpm2UVLtFoMHP4TtEweMizL_Slrd7CX6BcLO8pVOmiF8fK2yhTc8k_XdRJu-QNspJwDj4EoOU1&amp;t=635875548900000000" alt="Scroll up" />
+		</div><div class="ctl00_pnlHeader_mnuHor_6 ctl00_pnlHeader_mnuHor_0" id="ctl00_pnlHeader_mnuHorn0ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/scuolawebfamiglie/WebResource.axd?d=4OeWl9GLyjGK805GOflH2xLQXIjypuh4gHVuV-FxSn7Rbjjps6ZgwhnunLf5ESUbwW8d225GqCodm73GJJQrHeK11BlTSq135Jo_qj5Cte81&amp;t=635875548900000000" alt="Scroll down" />
+		</div>
+	</div><div id="ctl00_pnlHeader_mnuHorn1Items" class="ctl00_pnlHeader_mnuHor_0 ctl00_pnlHeader_mnuHor_7">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn11">
+				<td><table class="ctl00_pnlHeader_mnuHor_6" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_5" href="FMp39.aspx"><img src="../Images/Icons/374.png" alt="" style="border-style:none;vertical-align:middle;" /> Questionario</a></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><div class="ctl00_pnlHeader_mnuHor_6 ctl00_pnlHeader_mnuHor_0" id="ctl00_pnlHeader_mnuHorn1ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/scuolawebfamiglie/WebResource.axd?d=oprBSbqCK7_5crsP9om0EWmSl_W7_8YwFTJpm2UVLtFoMHP4TtEweMizL_Slrd7CX6BcLO8pVOmiF8fK2yhTc8k_XdRJu-QNspJwDj4EoOU1&amp;t=635875548900000000" alt="Scroll up" />
+		</div><div class="ctl00_pnlHeader_mnuHor_6 ctl00_pnlHeader_mnuHor_0" id="ctl00_pnlHeader_mnuHorn1ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/scuolawebfamiglie/WebResource.axd?d=4OeWl9GLyjGK805GOflH2xLQXIjypuh4gHVuV-FxSn7Rbjjps6ZgwhnunLf5ESUbwW8d225GqCodm73GJJQrHeK11BlTSq135Jo_qj5Cte81&amp;t=635875548900000000" alt="Scroll down" />
+		</div>
+	</div><div id="ctl00_pnlHeader_mnuHorn2Items" class="ctl00_pnlHeader_mnuHor_0 ctl00_pnlHeader_mnuHor_7">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn12">
+				<td><table class="ctl00_pnlHeader_mnuHor_6" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_5" href="FMpCruscotti.aspx"><img src="../Images/Icons/395.png" alt="" style="border-style:none;vertical-align:middle;" /> Cruscotti</a></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><div class="ctl00_pnlHeader_mnuHor_6 ctl00_pnlHeader_mnuHor_0" id="ctl00_pnlHeader_mnuHorn2ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/scuolawebfamiglie/WebResource.axd?d=oprBSbqCK7_5crsP9om0EWmSl_W7_8YwFTJpm2UVLtFoMHP4TtEweMizL_Slrd7CX6BcLO8pVOmiF8fK2yhTc8k_XdRJu-QNspJwDj4EoOU1&amp;t=635875548900000000" alt="Scroll up" />
+		</div><div class="ctl00_pnlHeader_mnuHor_6 ctl00_pnlHeader_mnuHor_0" id="ctl00_pnlHeader_mnuHorn2ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/scuolawebfamiglie/WebResource.axd?d=4OeWl9GLyjGK805GOflH2xLQXIjypuh4gHVuV-FxSn7Rbjjps6ZgwhnunLf5ESUbwW8d225GqCodm73GJJQrHeK11BlTSq135Jo_qj5Cte81&amp;t=635875548900000000" alt="Scroll down" />
+		</div>
+	</div><div id="ctl00_pnlHeader_mnuHorn3Items" class="ctl00_pnlHeader_mnuHor_0 ctl00_pnlHeader_mnuHor_7">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn13">
+				<td><table class="ctl00_pnlHeader_mnuHor_6" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_5" href="FMpImpostazioniUtente.aspx"><img src="../Images/Icons/53.png" alt="" style="border-style:none;vertical-align:middle;" /> Impostazioni utente</a></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><div class="ctl00_pnlHeader_mnuHor_6 ctl00_pnlHeader_mnuHor_0" id="ctl00_pnlHeader_mnuHorn3ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/scuolawebfamiglie/WebResource.axd?d=oprBSbqCK7_5crsP9om0EWmSl_W7_8YwFTJpm2UVLtFoMHP4TtEweMizL_Slrd7CX6BcLO8pVOmiF8fK2yhTc8k_XdRJu-QNspJwDj4EoOU1&amp;t=635875548900000000" alt="Scroll up" />
+		</div><div class="ctl00_pnlHeader_mnuHor_6 ctl00_pnlHeader_mnuHor_0" id="ctl00_pnlHeader_mnuHorn3ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/scuolawebfamiglie/WebResource.axd?d=4OeWl9GLyjGK805GOflH2xLQXIjypuh4gHVuV-FxSn7Rbjjps6ZgwhnunLf5ESUbwW8d225GqCodm73GJJQrHeK11BlTSq135Jo_qj5Cte81&amp;t=635875548900000000" alt="Scroll down" />
+		</div>
+	</div><div id="ctl00_pnlHeader_mnuHorn4Items" class="ctl00_pnlHeader_mnuHor_0 ctl00_pnlHeader_mnuHor_7">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn14">
+				<td><table class="ctl00_pnlHeader_mnuHor_6" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_5" href="FMpInfo.aspx"><img src="../Images/Icons/208.png" alt="" style="border-style:none;vertical-align:middle;" /> Informazioni</a></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_pnlHeader_mnuHorn15">
+				<td><table class="ctl00_pnlHeader_mnuHor_6" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_pnlHeader_mnuHor_1 ctl00_pnlHeader_mnuHor_5" href="FMpDocumenti.aspx"><img src="../Images/Icons/43.png" alt="" style="border-style:none;vertical-align:middle;" /> Documenti</a></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><div class="ctl00_pnlHeader_mnuHor_6 ctl00_pnlHeader_mnuHor_0" id="ctl00_pnlHeader_mnuHorn4ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/scuolawebfamiglie/WebResource.axd?d=oprBSbqCK7_5crsP9om0EWmSl_W7_8YwFTJpm2UVLtFoMHP4TtEweMizL_Slrd7CX6BcLO8pVOmiF8fK2yhTc8k_XdRJu-QNspJwDj4EoOU1&amp;t=635875548900000000" alt="Scroll up" />
+		</div><div class="ctl00_pnlHeader_mnuHor_6 ctl00_pnlHeader_mnuHor_0" id="ctl00_pnlHeader_mnuHorn4ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/scuolawebfamiglie/WebResource.axd?d=4OeWl9GLyjGK805GOflH2xLQXIjypuh4gHVuV-FxSn7Rbjjps6ZgwhnunLf5ESUbwW8d225GqCodm73GJJQrHeK11BlTSq135Jo_qj5Cte81&amp;t=635875548900000000" alt="Scroll down" />
+		</div>
+	</div><a id="ctl00_pnlHeader_mnuHor_SkipLink"></a>
+    </div>
+
+
+</div>
+
+        
+        <br />
+        <br />
+        <br />
+        
+    <script language='javascript' type='text/javascript'>
+        function gridColl_EndCallback(s, e) {
+            if (s.cp_modifica_colloquio) {
+                delete (s.cp_modifica_colloquio);
+                var btn = document.getElementById('ctl00_ContentPlaceHolder1_btnModificaColloqui');
+                btn.click();
+            }
+            if (s.cp_lista_colloquio) {
+                delete (s.cp_lista_colloquio);
+                var btn = document.getElementById('ctl00_ContentPlaceHolder1_btnListaColloqui');
+                btn.click();
+            }
+        }
+
+        function showPopupGiustifica(assenza, giustificazione) {
+            var btn = document.getElementById('ctl00_ContentPlaceHolder1_btnGiustifica');
+            var lblAssenza = document.getElementById('ctl00_ContentPlaceHolder1_lblAssenzaId');
+            var lblGiustificazione = document.getElementById('ctl00_ContentPlaceHolder1_lblGiustificazioneId');
+            lblAssenza.value = assenza;
+            lblGiustificazione.value = giustificazione;
+            btn.click();
+        }
+        function showDocumento(tipo, id) {
+            var btn = document.getElementById('ctl00_ContentPlaceHolder1_btnShowDoc');
+
+            var lblTipo = document.getElementById('ctl00_ContentPlaceHolder1_lblShowDocTipo');
+            var lblId = document.getElementById('ctl00_ContentPlaceHolder1_lblShowDocId');
+            lblTipo.value = tipo;
+            lblId.value = id;
+            btn.click();
+        }
+    </script>
+    <div id="ctl00_ContentPlaceHolder1_pnlMain">
+	
+        <table border="0" style="font-size: smaller; font-family: Verdana">
+            <tr>
+                <td>Studente
+                </td>
+                <td>
+                    <select size="1" name="ctl00$ContentPlaceHolder1$lstStudente" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$lstStudente\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ContentPlaceHolder1_lstStudente">
+		<option selected="selected" value="87960">TEODORANI LORENZO 5H</option>
+
+	</select>
+                    <span id="ctl00_ContentPlaceHolder1_lblStudente"></span>
+                </td>
+                <td>Materia
+                </td>
+                <td>
+                    <select size="1" name="ctl00$ContentPlaceHolder1$lstMateria" id="ctl00_ContentPlaceHolder1_lstMateria">
+		<option selected="selected" value="">Tutte le materie</option>
+		<option value="36">Gestione progetto, organizzazione d&#39;impresa</option>
+		<option value="11">Informatica</option>
+		<option value="13">Lingua e letteratura italiana</option>
+		<option value="12">Lingua inglese</option>
+		<option value="33">Matematica</option>
+		<option value="15">Religione cattolica o attivit&#224; alternativa</option>
+		<option value="38">Scienze motorie e sportive</option>
+		<option value="45">Sistemi e Reti</option>
+		<option value="23">Storia</option>
+		<option value="49">Tecn. e prog. di sistemi informatici e di telecom. (articolazione informatica)</option>
+
+	</select>
+                </td>
+                <td rowspan="2" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="ctl00$ContentPlaceHolder1$btnVisualizza" value="Visualizza" id="ctl00_ContentPlaceHolder1_btnVisualizza" style="height:40px;width:115px;background-image: url('../Images/Icons/283.png');background-repeat: no-repeat; background-position: left;background-color:ButtonFace;background-image: url('../Images/Icons/283.png');background-repeat: no-repeat; background-position: left;background-color:ButtonFace;background-image: url('../Images/Icons/283.png');background-repeat: no-repeat; background-position: left;background-color:ButtonFace;background-image: url('../Images/Icons/283.png');background-repeat: no-repeat; background-position: left;background-color:ButtonFace;" /></td>
+            </tr>
+            <tr>
+                <td>Tipo
+                </td>
+                <td>
+                    <select size="1" name="ctl00$ContentPlaceHolder1$lstGruppo" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$lstGruppo\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ContentPlaceHolder1_lstGruppo">
+		<option value="Voti">Voti</option>
+		<option value="Assenze">Assenze</option>
+		<option value="Argomenti svolti">Argomenti svolti</option>
+		<option selected="selected" value="Compiti assegnati">Compiti assegnati</option>
+		<option value="Comunicazioni">Comunicazioni</option>
+		<option value="Provvedimenti disciplinari">Provvedimenti disciplinari</option>
+		<option value="Scrutini">Scrutini</option>
+		<option value="Dettagli">Dettagli</option>
+		<option value="Statistiche">Statistiche</option>
+		<option value="Documenti">Documenti</option>
+		<option value="Prenotazione colloqui docenti">Prenotazione colloqui docenti</option>
+		<option value="Elenco completo">Elenco completo</option>
+
+	</select>
+                    <select size="1" name="ctl00$ContentPlaceHolder1$lstArchivio" id="ctl00_ContentPlaceHolder1_lstArchivio">
+		<option selected="selected" value="Compiti assegnati">Compiti assegnati</option>
+
+	</select>
+                </td>
+                <td>Periodo
+                </td>
+                <td>
+                    <select size="1" name="ctl00$ContentPlaceHolder1$lstPeriodo" id="ctl00_ContentPlaceHolder1_lstPeriodo">
+		<option selected="selected" value="AS">Anno scolastico</option>
+		<option value="1P">1&#176; periodo</option>
+		<option value="2P">2&#176; periodo</option>
+
+	</select>
+                </td>
+            </tr>
+        </table>
+        <table width="100%" border="0">
+            <tr>
+                <td>
+                    
+
+                    <br />
+                    <span id="ctl00_ContentPlaceHolder1_lblDett"></span>
+                    
+
+                    
+
+                    <div id="ctl00_ContentPlaceHolder1_pnlDettagli">
+		
+                        
+
+<style type="text/css">
+    .GrdInlineButton {display: inline;}
+</style>
+<div id="ctl00_ContentPlaceHolder1_gtbDett_pnlGridtoolbar" style="background-color:#F1F2EE;border-color:Black;border-width:1px;border-style:Solid;width:100%;text-align:left;">
+			
+    <script id="dxis_206295260" src="/scuolawebfamiglie/DXR.axd?r=1_232,1_134,1_225,1_169,1_131,1_217,1_223,1_206,1_215,1_153,1_194,1_196,1_167,1_175,1_138,1_180,1_166,1_157,1_165,1_156,1_216,1_231,1_218,1_190-v2VAc" type="text/javascript"></script><div class="dxmLite dxm-ltr">
+				<div class="dxm-main dxm-horizontal" id="ctl00_ContentPlaceHolder1_gtbDett_mnu" style="background-color:#F1F2EE;border-style:None;height:28px;text-align:Left;vertical-align:Middle;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;">
+					<ul class="dx dxm-image-l">
+						<li class="dxm-item dxm-noSubMenu dxm-noImage" style="height:26px;"><div class="dxm-content dxm-hasText" style="vertical-align:middle;">
+							<span class="dx-vam">Righe: <b>5</b></span>
+						</div></li><li class="dxm-separator"><b></b></li><li title="Filtra" class="dxm-item dxm-noSubMenu" style="height:26px;"><div class="dxm-content" style="vertical-align:middle;">
+							<img title="Filtra" class="dxm-image dx-vam" src="..\Lib\Images\toolbar_filtra.gif" alt="" style="height:18px;width:18px;" />
+						</div></li><li class="dxm-spacing"></li><li class="dxm-item dxm-dropDownMode dxm-noImage" style="height:26px;"><div class="dxm-content dxm-hasText" style="vertical-align:middle;">
+							<span class="dx-vam">Tipo filtro</span>
+						</div><div class="dxm-popOut" style="vertical-align:middle;">
+							<img class="dxWeb_mHorizontalPopOut dxm-pImage" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="v" />
+						</div></li><li class="dxm-separator"><b></b></li><li title="Filtro avanzato" class="dxm-item dxm-noSubMenu" style="height:26px;"><div class="dxm-content" style="vertical-align:middle;">
+							<img title="Filtro avanzato" class="dxm-image dx-vam" src="..\Lib\Images\toolbar_filtro_avanzato.gif" alt="" style="height:18px;width:18px;" />
+						</div></li><li class="dxm-separator"><b></b></li><li title="Refresh" class="dxm-item dxm-noSubMenu" style="height:26px;"><div class="dxm-content" style="vertical-align:middle;">
+							<img title="Refresh" class="dxm-image dx-vam" src="..\Lib\Images\toolbar_refresh.png" alt="" style="height:18px;width:18px;" />
+						</div></li><li class="dxm-spacing"></li><li class="dxm-item dxm-dropDownMode" style="height:26px;"><div class="dxm-content" style="vertical-align:middle;">
+							<img class="dxm-image dx-vam" src="..\Lib\Images\toolbar_visualizzazioni.png" alt="" style="height:18px;width:18px;" />
+						</div><div class="dxm-popOut" style="vertical-align:middle;">
+							<img class="dxWeb_mHorizontalPopOut dxm-pImage" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="v" />
+						</div></li><li class="dxm-separator"><b></b></li><li title="Esporta" class="dxm-item dxm-dropDownMode" style="height:26px;"><div class="dxm-content" style="vertical-align:middle;">
+							<img title="Esporta" class="dxm-image dx-vam" src="..\Lib\Images\toolbar_export.gif" alt="" style="height:18px;width:18px;" />
+						</div><div class="dxm-popOut" style="vertical-align:middle;">
+							<img class="dxWeb_mHorizontalPopOut dxm-pImage" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="v" />
+						</div></li><li class="dxm-spacing"></li><li title="Visualizzazione paginata" class="dxm-item dxm-noSubMenu" style="height:26px;"><div class="dxm-content" style="vertical-align:middle;">
+							<img title="Visualizzazione paginata" class="dxm-image dx-vam" src="..\Lib\Images\toolbar_pagedview.gif" alt="" style="height:18px;width:18px;" />
+						</div></li><li class="dxm-separator"><b></b></li><li title="Pivot" class="dxm-item dxm-noSubMenu" style="height:26px;"><div class="dxm-content" style="vertical-align:middle;">
+							<img title="Pivot" class="dxm-image dx-vam" src="..\Lib\Images\toolbar_pivot.png" alt="" style="height:18px;width:18px;" />
+						</div></li><li class="dxm-separator"><b></b></li><li title="Avanzate" class="dxm-item dxm-dropDownMode" style="height:26px;"><div class="dxm-content" style="vertical-align:middle;">
+							<img title="Avanzate" class="dxm-image dx-vam" src="..\Lib\Images\toolbar_avanzate.png" alt="" style="height:18px;width:18px;" />
+						</div><div class="dxm-popOut" style="vertical-align:middle;">
+							<img class="dxWeb_mHorizontalPopOut dxm-pImage" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="v" />
+						</div></li>
+					</ul>
+				</div><b class="dx-clear"></b><div id="ctl00_ContentPlaceHolder1_gtbDett_mnu_DXM2_" style="z-index:20002;display:none;">
+					<div class="dxm-shadow dxm-popup">
+						<ul class="dx dxm-gutter">
+							<li class="dxm-item dxm-checked" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<img class="dxWeb_mSubMenuItemChecked dxm-image dx-vam" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" style="height:18px;" /><span class="dx-vam">Contiene</span>
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item dxm-noImage" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">Inizia per</span>
+							</div><b class="dx-clear"></b></li>
+						</ul>
+					</div>
+				</div><div id="ctl00_ContentPlaceHolder1_gtbDett_mnu_DXM5_" style="z-index:20002;display:none;">
+					<div class="dxm-shadow dxm-popup">
+						<ul class="dx dxm-noImages dxm-gutter">
+							<li class="dxm-item" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">Visualizzazione standard</span>
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">Visualizzazione raggruppata</span>
+							</div><b class="dx-clear"></b></li>
+						</ul>
+					</div>
+				</div><div id="ctl00_ContentPlaceHolder1_gtbDett_mnu_DXM6_" style="z-index:20002;display:none;">
+					<div class="dxm-shadow dxm-popup">
+						<ul class="dx dxm-noImages dxm-gutter">
+							<li class="dxm-item dxm-disabled"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">Dati griglia</span>
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">&nbsp;&nbsp; Excel (XLS)</span>
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">&nbsp;&nbsp; Excel (XLSX)</span>
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">&nbsp;&nbsp; Csv</span>
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item dxm-disabled"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">Recordset</span>
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">&nbsp;&nbsp; Excel (XLS)</span>
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">&nbsp;&nbsp; Excel (XLSX)</span>
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">&nbsp;&nbsp; Access (MDB)</span>
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">&nbsp;&nbsp; Csv</span>
+							</div><b class="dx-clear"></b></li>
+						</ul>
+					</div>
+				</div><div id="ctl00_ContentPlaceHolder1_gtbDett_mnu_DXM9_" style="z-index:20002;display:none;">
+					<div class="dxm-shadow dxm-popup">
+						<ul class="dx dxm-noImages dxm-gutter">
+							<li class="dxm-item" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">Griglia altezza fissa</span>
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item" style="height:26px;"><div class="dxm-content dxm-hasText">
+								<span class="dx-vam">Visualizza query</span>
+							</div><b class="dx-clear"></b></li>
+						</ul>
+					</div>
+				</div>
+			</div><script id="dxss_1596582248" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_gtbDett_mnu',[[['dxm-hovered',''],['',''],['DXI0_','DXI1_','DXI2i0_','DXI2i1_','DXI3_','DXI4_','DXI5i0_','DXI5i1_','DXI6i1_','DXI6i2_','DXI6i3_','DXI6i5_','DXI6i6_','DXI6i7_','DXI6i8_','DXI7_','DXI8_','DXI9i0_','DXI9i1_'],['','T']],[['dxm-hovered','',''],['','',''],['DXI2_','DXI5_','DXI6_','DXI9_'],['','P','T']],[[''],[''],['DXME2_','DXMBC2_','DXME5_','DXMBC5_','DXME6_','DXMBC6_','DXME9_','DXMBC9_']]]);
+ASPx.RemoveHoverItems('ctl00_ContentPlaceHolder1_gtbDett_mnu',[[['DXI6i0_','DXI6i4_'],['','T']]]);
+
+var dxo = new ASPxClientMenu('ctl00_ContentPlaceHolder1_gtbDett_mnu');
+dxo.InitGlobalVariable('ctl00_ContentPlaceHolder1_gtbDett_mnu');
+dxo.encodeHtml = false;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$gtbDett$mnu';
+dxo.RegisterServerEventAssigned(['ItemClick']);
+dxo.renderData={'':[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]],'2':[[0],[1]],'5':[[0],[1]],'6':[0,[1],[2],[3],4,[5],[6],[7],[8]],'9':[[0],[1]]};
+dxo.AfterCreate();
+
+//-->
+</script>
+
+		</div>
+<div id="ctl00_ContentPlaceHolder1_gtbDett_popupEsporta_PW-1" class="dxpcLite dxpclW" style="width:280px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+			<div class="dxpc-mainDiv dxpc-shadow">
+				<div class="dxpc-header dxpc-withBtn" style="cursor:move;-webkit-user-select:none;">
+					<div class="dxpc-closeBtn">
+						<img class="dxWeb_pcCloseButton" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="[Close]" />
+					</div><div class="dxpc-headerContent">
+						<span class="dxpc-headerText dx-vam">Esportazione</span>
+					</div><b class="dx-clear"></b>
+				</div><div class="dxpc-contentWrapper">
+					<div class="dxpc-content">
+						
+            <center>
+            <table border="1">
+                <tr>
+                    <td>
+                        Esportazione dati:
+                        <select size="1" name="ctl00$ContentPlaceHolder1$gtbDett$popupEsporta$lstFiltro" id="ctl00_ContentPlaceHolder1_gtbDett_popupEsporta_lstFiltro">
+							<option value="FILTRATA">Filtrati</option>
+							<option value="COMPLESSIVA">Completi</option>
+
+						</select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$gtbDett$popupEsporta$popupEsporta_btnOk" value="Ok" onclick="setTimeout(&quot;popupEsporta.Hide();&quot;,2000);" id="ctl00_ContentPlaceHolder1_gtbDett_popupEsporta_popupEsporta_btnOk" style="width:90px;" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$gtbDett$popupEsporta$btnAnnulla" value="Annulla" id="ctl00_ContentPlaceHolder1_gtbDett_popupEsporta_btnAnnulla" style="width:90px;" />
+                    </td>
+                </tr>
+            </table>
+            </center>
+        
+					</div>
+				</div>
+			</div>
+		</div><div id="ctl00_ContentPlaceHolder1_gtbDett_popupEsporta_DXPWMB-1" class="dxpcModalBackLite" style="z-index:9999;">
+
+		</div><table id="ctl00_ContentPlaceHolder1_gtbDett_popupEsporta_LP" class="dxpcLoadingPanel dxlpLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+			<tr>
+				<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_ContentPlaceHolder1_gtbDett_popupEsporta_TL">Loading&hellip;</span></td>
+			</tr>
+		</table><div id="ctl00_ContentPlaceHolder1_gtbDett_popupEsporta_LD" class="dxpcLoadingDiv dxlpLoadingDiv dx-ft" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+		</div><script id="dxss_538851097" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_gtbDett_popupEsporta',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_ContentPlaceHolder1_gtbDett_popupEsporta');
+dxo.InitGlobalVariable('popupEsporta');
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$gtbDett$popupEsporta',arg,ASPx.Callback,'ctl00_ContentPlaceHolder1_gtbDett_popupEsporta',ASPx.CallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$gtbDett$popupEsporta';
+dxo.popupAnimationType='fade';
+dxo.popupHorizontalAlign='WindowCenter';
+dxo.popupVerticalAlign='WindowCenter';
+dxo.allowDragging=true;
+dxo.width=280;
+dxo.widthFromServer=true;
+dxo.AfterCreate();
+
+//-->
+</script>
+
+<div id="ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg_PW-1" class="dxpcLite dxpclW" style="width:320px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+			<div class="dxpc-mainDiv dxpc-shadow">
+				<div class="dxpc-header dxpc-withBtn" style="cursor:move;-webkit-user-select:none;">
+					<div class="dxpc-closeBtn">
+						<img class="dxWeb_pcCloseButton" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="[Close]" />
+					</div><div class="dxpc-headerContent">
+						<span class="dxpc-headerText dx-vam">Funzioni di raggruppamento</span>
+					</div><b class="dx-clear"></b>
+				</div><div class="dxpc-contentWrapper">
+					<div class="dxpc-content">
+						
+            <center>
+                <span id="ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg_popupFunzioniRaggruppamento_lblDett" style="display:inline-block;height:210px;"></span>
+            </center>
+        
+					</div>
+				</div>
+			</div>
+		</div><div id="ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg_DXPWMB-1" class="dxpcModalBackLite" style="z-index:9999;">
+
+		</div><table id="ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg_LP" class="dxpcLoadingPanel dxlpLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+			<tr>
+				<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg_TL">Loading&hellip;</span></td>
+			</tr>
+		</table><div id="ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg_LD" class="dxpcLoadingDiv dxlpLoadingDiv dx-ft" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+		</div><script id="dxss_214109381" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg');
+dxo.InitGlobalVariable('ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg');
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$gtbDett$popupFunzRagg',arg,ASPx.Callback,'ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg',ASPx.CallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$gtbDett$popupFunzRagg';
+dxo.popupAnimationType='fade';
+dxo.popupHorizontalAlign='WindowCenter';
+dxo.popupVerticalAlign='WindowCenter';
+dxo.allowDragging=true;
+dxo.width=320;
+dxo.widthFromServer=true;
+dxo.AfterCreate();
+
+//-->
+</script>
+
+
+
+                        <table class="dxgvControl" cellspacing="0" cellpadding="0" id="ctl00_ContentPlaceHolder1_grdDett" border="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+			<tr>
+				<td><table id="ctl00_ContentPlaceHolder1_grdDett_DXMainTable" class="dxgvTable" cellspacing="0" cellpadding="0" onclick="ASPx.GTableClick(&#39;ctl00_ContentPlaceHolder1_grdDett&#39;, event);" oncontextmenu="return ASPx.GVContextMenu(&#39;ctl00_ContentPlaceHolder1_grdDett&#39;,event);" border="0" style="width:100%;border-collapse:collapse;empty-cells:show;">
+					<tr id="ctl00_ContentPlaceHolder1_grdDett_DXHeadersRow0">
+						<td id="ctl00_ContentPlaceHolder1_grdDett_col0" class="dxgvHeader" onmousedown="ASPx.GHeaderMouseDown(&#39;ctl00_ContentPlaceHolder1_grdDett&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+							<tr>
+								<td>Data</td><td style="width:1px;text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+							</tr>
+						</table></td><td id="ctl00_ContentPlaceHolder1_grdDett_col1" class="dxgvHeader" onmousedown="ASPx.GHeaderMouseDown(&#39;ctl00_ContentPlaceHolder1_grdDett&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+							<tr>
+								<td>Descrizione</td><td style="width:1px;text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+							</tr>
+						</table></td><td id="ctl00_ContentPlaceHolder1_grdDett_col2" class="dxgvHeader" onmousedown="ASPx.GHeaderMouseDown(&#39;ctl00_ContentPlaceHolder1_grdDett&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+							<tr>
+								<td>Data consegna</td><td style="width:1px;text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+							</tr>
+						</table></td><td id="ctl00_ContentPlaceHolder1_grdDett_col3" class="dxgvHeader" onmousedown="ASPx.GHeaderMouseDown(&#39;ctl00_ContentPlaceHolder1_grdDett&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+							<tr>
+								<td>Docente</td><td style="width:1px;text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+							</tr>
+						</table></td><td id="ctl00_ContentPlaceHolder1_grdDett_col4" class="dxgvHeader" onmousedown="ASPx.GHeaderMouseDown(&#39;ctl00_ContentPlaceHolder1_grdDett&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+							<tr>
+								<td>Materia</td><td style="width:1px;text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+							</tr>
+						</table></td><td id="ctl00_ContentPlaceHolder1_grdDett_col7" class="dxgvHeader" onmousedown="ASPx.GHeaderMouseDown(&#39;ctl00_ContentPlaceHolder1_grdDett&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;border-right-width:0px;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+							<tr>
+								<td>Allegati</td><td style="width:1px;text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+							</tr>
+						</table></td>
+					</tr><tr id="ctl00_ContentPlaceHolder1_grdDett_DXDataRow0" class="dxgvDataRow" style="background-color:#FFFFFF;text-decoration:none;">
+						<td class="dxgv" column="Data">23/09/2016</td><td class="dxgv" align="left" column="Descrizione">Teo p.1467 Es.p.1500 n.(1), da 2 a 11, 13,14</td><td class="dxgv" align="left" column="Data consegna">26/09/2016</td><td class="dxgv" align="left" column="Docente">GRADARA SARA</td><td class="dxgv" align="left" column="Materia">Matematica</td><td id="ctl00_ContentPlaceHolder1_grdDett_tccell0_7" class="dxgv" align="left" column="Allegati" style="border-right-width:0px;"></td>
+					</tr><tr id="ctl00_ContentPlaceHolder1_grdDett_DXDataRow1" class="dxgvDataRow dxgvDataRowAlt" style="background-color:#FFFFFF;text-decoration:none;">
+						<td class="dxgv" column="Data">22/09/2016</td><td class="dxgv" align="left" column="Descrizione">Rispondere alle domande sul brano di Darwin e fare ricerca su Desmond Morris e sul testo &quot;la scimmia nuda&quot;</td><td class="dxgv" align="left" column="Data consegna">24/09/2016</td><td class="dxgv" align="left" column="Docente">TOMBETTI BRUNELLA</td><td class="dxgv" align="left" column="Materia">Lingua e letteratura italiana</td><td id="ctl00_ContentPlaceHolder1_grdDett_tccell1_7" class="dxgv" align="left" column="Allegati" style="border-right-width:0px;"></td>
+					</tr><tr id="ctl00_ContentPlaceHolder1_grdDett_DXDataRow2" class="dxgvDataRow" style="background-color:LightGreen;text-decoration:none;">
+						<td class="dxgv" column="Data">19/09/2016</td><td class="dxgv" align="left" column="Descrizione">Ripasso di integrali p.1232 n.45,51,55,61,66, 69,75,80,82,85,87,92,95,99,100,101,103,116,120,127,128,130,136,137,141,da 174 a 180. Portare il libro di 5^.</td><td class="dxgv" align="left" column="Data consegna">23/09/2016</td><td class="dxgv" align="left" column="Docente">GRADARA SARA</td><td class="dxgv" align="left" column="Materia">Matematica</td><td id="ctl00_ContentPlaceHolder1_grdDett_tccell2_7" class="dxgv" align="left" column="Allegati" style="border-right-width:0px;"></td>
+					</tr><tr id="ctl00_ContentPlaceHolder1_grdDett_DXDataRow3" class="dxgvDataRow dxgvDataRowAlt" style="background-color:LightGreen;text-decoration:none;">
+						<td class="dxgv" column="Data">21/09/2016</td><td class="dxgv" align="left" column="Descrizione">Sistema informativo. Approccio convenzionale: il sistema EDP. Pag.2-3.</td><td class="dxgv" align="left" column="Data consegna">23/09/2016</td><td class="dxgv" align="left" column="Docente">ZABBERONI VANNA</td><td class="dxgv" align="left" column="Materia">Informatica</td><td id="ctl00_ContentPlaceHolder1_grdDett_tccell3_7" class="dxgv" align="left" column="Allegati" style="border-right-width:0px;"></td>
+					</tr><tr id="ctl00_ContentPlaceHolder1_grdDett_DXDataRow4" class="dxgvDataRow" style="background-color:LightGreen;text-decoration:none;">
+						<td class="dxgv" column="Data" style="border-bottom-width:0px;">16/09/2016</td><td class="dxgv" align="left" column="Descrizione" style="border-bottom-width:0px;">Scheda assegnata Es. A tutto, B fino al n.7</td><td class="dxgv" align="left" column="Data consegna" style="border-bottom-width:0px;">19/09/2016</td><td class="dxgv" align="left" column="Docente" style="border-bottom-width:0px;">GRADARA SARA</td><td class="dxgv" align="left" column="Materia" style="border-bottom-width:0px;">Matematica</td><td id="ctl00_ContentPlaceHolder1_grdDett_tccell4_7" class="dxgv" align="left" column="Allegati" style="border-right-width:0px;border-bottom-width:0px;"></td>
+					</tr>
+				</table><div class="dxmLite dxm-ltr">
+					<div id="ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_GroupPanel" style="z-index:20000;display:none;">
+						<div class="dxm-popupMain dxm-shadow dxm-popup dxgvContextMenu">
+							<ul class="dx dxm-gutter">
+								<li class="dxm-item"><div class="dxm-content dxm-hasText">
+									<img class="dxGridView_gvCMFullExpand dxm-image dx-vam" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" /><span class="dx-vam">Expand All</span>
+								</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item"><div class="dxm-content dxm-hasText">
+									<img class="dxGridView_gvCMFullCollapse dxm-image dx-vam" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" /><span class="dx-vam">Collapse All</span>
+								</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item"><div class="dxm-content dxm-hasText">
+									<img class="dxGridView_gvCMClearGrouping dxm-image dx-vam" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" /><span class="dx-vam">Clear Grouping</span>
+								</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item"><div class="dxm-content dxm-hasText">
+									<img class="dxGridView_gvCMShowGroupPanel dxm-image dx-vam" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" /><span class="dx-vam">Group Panel</span>
+								</div><b class="dx-clear"></b></li>
+							</ul>
+						</div>
+					</div>
+				</div><script id="dxss_729939444" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_GroupPanel',[[[''],[''],['DXME_']],[['dxm-hovered',''],['',''],['DXI0_','DXI1_','DXI2_','DXI3_'],['','T']]]);
+ASPx.AddSelectedItems('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_GroupPanel',[[['dxm-checked',''],['',''],['DXI3_'],['','T']]]);
+ASPx.AddDisabledItems('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_GroupPanel',[[['dxm-disabled'],[''],['DXI0_','DXI1_','DXI2_','DXI3_'],['','T']]]);
+
+var dxo = new ASPxClientPopupMenu('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_GroupPanel');
+dxo.InitGlobalVariable('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_GroupPanel');
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$grdDett$DXContextMenu_GroupPanel';
+dxo.ItemClick.AddHandler(function(s,e){ASPx.GVContextMenuItemClick('ctl00_ContentPlaceHolder1_grdDett',e)});
+dxo.cpItemsInfo=({'0':[[1],[0],[1]],'1':[[1],[0],[1]],'2':[[0],[1],[1]],'3':[[0],[0],[1]]});
+dxo.cpType=0;
+dxo.renderData={'':[[0],[1],[2],[3]]};
+dxo.allowCheckItems=true;
+dxo.checkedState='';
+dxo.itemCheckedGroups=[['3']];
+dxo.CreateItems([{'name':'FullExpand'},{'name':'FullCollapse'},{'name':'ClearGrouping'},{'name':'ShowGroupPanel'}]);
+dxo.AfterCreate();
+
+//-->
+</script><div class="dxmLite dxm-ltr">
+					<div id="ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_Rows" style="z-index:20000;display:none;">
+						<div class="dxm-popupMain dxm-shadow dxm-popup dxgvContextMenu">
+							<ul class="dx dxm-noImages dxm-gutter">
+								<li class="dxm-item"><div class="dxm-content dxm-hasText">
+									<span class="dx-vam">Funzioni di raggruppamento</span>
+								</div><b class="dx-clear"></b></li>
+							</ul>
+						</div>
+					</div>
+				</div><script id="dxss_1259690" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_Rows',[[[''],[''],['DXME_']],[['dxm-hovered',''],['',''],['DXI0_'],['','T']]]);
+ASPx.AddDisabledItems('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_Rows',[[['dxm-disabled'],[''],['DXI0_'],['','T']]]);
+
+var dxo = new ASPxClientPopupMenu('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_Rows');
+dxo.InitGlobalVariable('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_Rows');
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$grdDett$DXContextMenu_Rows';
+dxo.ItemClick.AddHandler(function(s,e){ASPx.GVContextMenuItemClick('ctl00_ContentPlaceHolder1_grdDett',e)});
+dxo.cpItemsInfo=({'0':[[0],[0],[1]]});
+dxo.cpType=2;
+dxo.renderData={'':[[0]]};
+dxo.CreateItems([{'name':'FUNZIONI.RAGGRUPPAMENTO'}]);
+dxo.AfterCreate();
+
+//-->
+</script><div class="dxmLite dxm-ltr">
+					<div id="ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_Footer" style="z-index:20000;display:none;">
+						<div class="dxm-popupMain dxm-shadow dxm-popup dxgvContextMenu">
+							<ul class="dx dxm-gutter">
+								<li class="dxm-item"><div class="dxm-content dxm-hasText">
+									<img class="dxGridView_gvCMSummarySum dxm-image dx-vam" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" /><span class="dx-vam">Sum</span>
+								</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item"><div class="dxm-content dxm-hasText">
+									<img class="dxGridView_gvCMSummaryMin dxm-image dx-vam" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" /><span class="dx-vam">Min</span>
+								</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item"><div class="dxm-content dxm-hasText">
+									<img class="dxGridView_gvCMSummaryMax dxm-image dx-vam" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" /><span class="dx-vam">Max</span>
+								</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item"><div class="dxm-content dxm-hasText">
+									<img class="dxGridView_gvCMSummaryCount dxm-image dx-vam" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" /><span class="dx-vam">Count</span>
+								</div><b class="dx-clear"></b></li><li class="dxm-spacing"></li><li class="dxm-item"><div class="dxm-content dxm-hasText">
+									<img class="dxGridView_gvCMSummaryAverage dxm-image dx-vam" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" /><span class="dx-vam">Average</span>
+								</div><b class="dx-clear"></b></li><li class="dxm-separator"><b></b></li><li class="dxm-item dxm-noImage"><div class="dxm-content dxm-hasText">
+									<span class="dx-vam">None</span>
+								</div><b class="dx-clear"></b></li>
+							</ul>
+						</div>
+					</div>
+				</div><script id="dxss_498882897" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_Footer',[[[''],[''],['DXME_']],[['dxm-hovered',''],['',''],['DXI0_','DXI1_','DXI2_','DXI3_','DXI4_','DXI5_'],['','T']]]);
+ASPx.AddSelectedItems('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_Footer',[[['dxm-checked',''],['',''],['DXI0_','DXI1_','DXI2_','DXI3_','DXI4_'],['','T']]]);
+ASPx.AddDisabledItems('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_Footer',[[['dxm-disabled'],[''],['DXI0_','DXI1_','DXI2_','DXI3_','DXI4_','DXI5_'],['','T']]]);
+
+var dxo = new ASPxClientPopupMenu('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_Footer');
+dxo.InitGlobalVariable('ctl00_ContentPlaceHolder1_grdDett_DXContextMenu_Footer');
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$grdDett$DXContextMenu_Footer';
+dxo.ItemClick.AddHandler(function(s,e){ASPx.GVContextMenuItemClick('ctl00_ContentPlaceHolder1_grdDett',e)});
+dxo.cpItemsInfo=({'0':[[1],[0],[1]],'1':[[1],[0],[1]],'2':[[1],[0],[1]],'3':[[1],[0],[1]],'4':[[1],[0],[1]],'5':[[1],[0],[1]]});
+dxo.cpType=3;
+dxo.renderData={'':[[0],[1],[2],[3],[4],[5]]};
+dxo.allowCheckItems=true;
+dxo.checkedState='';
+dxo.itemCheckedGroups=[['0'],['1'],['2'],['3'],['4']];
+dxo.CreateItems([{'beginGroup':true,'name':'SummarySum'},{'name':'SummaryMin'},{'name':'SummaryMax'},{'name':'SummaryCount'},{'name':'SummaryAverage'},{'beginGroup':true,'name':'SummaryNone'}]);
+dxo.AfterCreate();
+
+//-->
+</script><table id="ctl00_ContentPlaceHolder1_grdDett_LP" class="dxgvLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+					<tr>
+						<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_ContentPlaceHolder1_grdDett_TL">Loading&hellip;</span></td>
+					</tr>
+				</table><div id="ctl00_ContentPlaceHolder1_grdDett_LD" class="dxgvLoadingDiv" style="display:none;z-index:29999;position:absolute;">
+
+				</div><img id="ctl00_ContentPlaceHolder1_grdDett_IADD" class="dxGridView_gvDragAndDropArrowDown" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="|" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_ContentPlaceHolder1_grdDett_IADU" class="dxGridView_gvDragAndDropArrowUp" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="|" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_ContentPlaceHolder1_grdDett_IDHF" class="dxGridView_gvDragAndDropHideColumn" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="Hide" style="position:absolute;visibility:hidden;top:-100px;" /></td>
+			</tr>
+		</table><script id="dxss_1804649550" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientGridView('ctl00_ContentPlaceHolder1_grdDett');
+dxo.InitGlobalVariable('grdDett');
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$grdDett',arg,ASPx.Callback,'ctl00_ContentPlaceHolder1_grdDett',ASPx.CallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$grdDett';
+dxo.EndCallback.AddHandler(function(s, e) { 
+   if (s.cp_grdmnu) { 
+      if (s.cp_grdmnu.indexOf("FUNZIONI.RAGGRUPPAMENTO", s.cp_grdmnu - "FUNZIONI.RAGGRUPPAMENTO".length) !== -1) { 
+         if (grdCol != "") { 
+            ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg.PerformCallback(s.cp_grdmnu + '|' + grdRow + '|' + grdCol); 
+            delete (s.cp_grdmnu); 
+            ctl00_ContentPlaceHolder1_gtbDett_popupFunzRagg.Show(); 
+         } 
+      } 
+   } else {
+   
+   }
+});
+dxo.ContextMenu.AddHandler(function OnContextMenu(s, e) {    grdRow = e.index;    if (e.htmlEvent.target.attributes.column != undefined) {      grdCol = e.htmlEvent.target.attributes.column.value;   } else if (e.htmlEvent.target.parentElement.attributes.column != undefined) {      grdCol = e.htmlEvent.target.parentElement.attributes.column.value;   } else if (e.htmlEvent.target.parentElement.parentNode.attributes.column != undefined) {      grdCol = e.htmlEvent.target.parentElement.parentNode.attributes.column.value;   } else {      grdCol = "";   }} );
+dxo.ContextMenuItemClick.AddHandler(function(sender, args) { 
+   args.processOnServer=true; 
+   usePostBack=false;
+});
+dxo.stateObject = ({'selection':'','callbackState':'BwEHAQIFU3RhdGUHVAcIBwACAQcBAgEHAgIBBwMCAQcEAgEHBQIABwYCAAcHAgEHAAcABwAHAAIABQAAAIAJAgAHAAkCAAIAAwcEAgAHAAIBBwUHAAIAAgEHAAcABwAHAA==','keys':[]});
+dxo.callBacksEnabled=true;
+dxo.pageRowCount=5;
+dxo.pageRowSize=10;
+dxo.pageIndex=-1;
+dxo.pageCount=1;
+dxo.selectedWithoutPageRowCount=0;
+dxo.visibleStartIndex=0;
+dxo.focusedRowIndex=-1;
+dxo.allowFocusedRow=false;
+dxo.allowSelectByItemClick=false;
+dxo.allowSelectSingleRowOnly=false;
+dxo.callbackOnFocusedRowChanged=false;
+dxo.callbackOnSelectionChanged=false;
+dxo.columns = [new ASPxClientGridViewColumn('',0,-1,'Data',1,'',0,1,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',1,-1,'Descrizione',1,'',0,1,1,1,0,0,0,0),
+new ASPxClientGridViewColumn('',2,-1,'Data consegna',1,'',0,1,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',3,-1,'Docente',1,'',0,1,1,1,0,0,0,0),
+new ASPxClientGridViewColumn('',4,-1,'Materia',1,'',0,1,1,1,0,0,0,0),
+new ASPxClientGridViewColumn('',5,-1,'Compiti_Id',0,'',0,1,1,1,0,1,0,0),
+new ASPxClientGridViewColumn('',6,-1,'Files',0,'',0,1,1,1,0,1,0,0),
+new ASPxClientGridViewColumn('',7,-1,'Allegati',1,'',0,1,1,1,0,0,0,0)];
+dxo.editState=0;
+dxo.editItemVisibleIndex=-1;
+dxo.searchPanelFilter='';
+dxo.editMode=3;
+dxo.indentColumnCount=0;
+dxo.allowMultiColumnAutoFilter=false;
+dxo.AfterCreate();
+
+//-->
+</script><script id="dxss_648423198" type="text/javascript">
+<!--
+ASPxClientGridBase.InitializeStyles('ctl00_ContentPlaceHolder1_grdDett',({'sel':{'css':'dxgvSelectedRow'},'fi':{'css':'dxgvFocusedRow'},'bec':{'css':'dxgvBatchEditCell dxgv'},'bemc':{'css':'dxgvBatchEditModifiedCell dxgv'},'bemergmc':{'css':'dxgvBatchEditCell dxgvBatchEditModifiedCell dxgv'},'ei':'<tr class="dxgvEditingErrorRow">\r\n\t<td class="dxgv" data-colSpan="6" style="border-right-width:0px;"></td>\r\n</tr>','fgi':{'css':'dxgvFocusedGroupRow'}}),[])
+//-->
+</script>
+                    
+	</div>
+
+                    <br />
+                    <span id="ctl00_ContentPlaceHolder1_lblDettDx"></span>
+                    <table id="ctl00_ContentPlaceHolder1_tblDettDx" border="1">
+	</table>
+	
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="ctl00_ContentPlaceHolder1_lblInfo" style="display:inline-block;font-style:italic;width:840px;"></span>
+                </td>
+            </tr>
+        </table>
+    
+</div>
+
+    <script type="text/javascript">
+        function sizeFrame() {
+            var F = document.getElementById("ctl00_ContentPlaceHolder1_Iframe1");
+            try {
+                if (F != null) {
+                    // Altezza del browser meno l'header e il footer
+                    F.height = document.documentElement.clientHeight - 75;
+                }
+            }
+            catch (err) {
+                // In caso di errore, l'altezza di default
+                F.height = 550;
+            }
+        }
+        window.onload = sizeFrame;
+    </script>
+
+    
+    <input type="submit" name="ctl00$ContentPlaceHolder1$btnListaColloqui" value="Lista colloqui" id="ctl00_ContentPlaceHolder1_btnListaColloqui" style="visibility: hidden" />
+    <input type="submit" name="ctl00$ContentPlaceHolder1$btnGiustifica" value="Giustifica" id="ctl00_ContentPlaceHolder1_btnGiustifica" style="visibility: hidden" />
+    <input name="ctl00$ContentPlaceHolder1$lblAssenzaId" type="text" id="ctl00_ContentPlaceHolder1_lblAssenzaId" style="visibility: hidden" />
+    <input name="ctl00$ContentPlaceHolder1$lblGiustificazioneId" type="text" id="ctl00_ContentPlaceHolder1_lblGiustificazioneId" style="visibility: hidden" />
+    <input type="submit" name="ctl00$ContentPlaceHolder1$btnShowDoc" value="Show doc" id="ctl00_ContentPlaceHolder1_btnShowDoc" style="visibility: hidden" />
+    <input name="ctl00$ContentPlaceHolder1$lblShowDocId" type="text" id="ctl00_ContentPlaceHolder1_lblShowDocId" style="visibility: hidden" />
+    <input name="ctl00$ContentPlaceHolder1$lblShowDocTipo" type="text" id="ctl00_ContentPlaceHolder1_lblShowDocTipo" style="visibility: hidden" />
+    <input type="submit" name="ctl00$ContentPlaceHolder1$btnModificaColloqui" value="Modifica colloqui" id="ctl00_ContentPlaceHolder1_btnModificaColloqui" style="visibility: hidden" />
+
+    <div id="ctl00_ContentPlaceHolder1_popupGiustificazione_PW-1" class="dxpcLite dxpclW" style="width:200px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+	<div class="dxpc-mainDiv dxpc-shadow">
+		<div class="dxpc-header dxpc-withBtn" style="cursor:move;-webkit-user-select:none;">
+			<div class="dxpc-closeBtn">
+				<img class="dxWeb_pcCloseButton" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="[Close]" />
+			</div><div class="dxpc-headerContent">
+				<span class="dxpc-headerText dx-vam">Giustificazione</span>
+			</div><b class="dx-clear"></b>
+		</div><div class="dxpc-contentWrapper">
+			<div class="dxpc-content">
+				
+                <span id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_lblNote"></span>
+                <table width="580px">
+                    <tr id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_rowOperazione">
+					<td style="width: 169px">Operazione
+                        </td>
+					<td>
+                            <select size="1" name="ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_lstOperazione" id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_lstOperazione" style="width:200px;">
+						<option selected="selected" value="GIUSTIFICA">Modifica giustificazione</option>
+						<option value="CANCELLA">Cancella giustificazione</option>
+
+					</select>
+                        </td>
+				</tr>
+				
+                    <tr>
+                        <td style="width: 169px">Motivo
+                        </td>
+                        <td>
+                            <select size="1" name="ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_lstMotivo" id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_lstMotivo" style="width:200px;">
+					<option selected="selected" value=""></option>
+					<option value="Malattia">Malattia</option>
+					<option value="Trasporti">Trasporti</option>
+					<option value="Familiari">Familiari</option>
+					<option value="Altro">Altro</option>
+
+				</select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 169px">Descrizione
+                        </td>
+                        <td>
+                            <textarea name="ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_txtDescrizione" rows="2" cols="20" id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_txtDescrizione" style="height:45px;width:450px;">
+</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 169px">Certificato del
+                        </td>
+                        <td>
+                            
+
+<script type="text/javascript" language="javascript">
+    function ValidaData(value) {
+        var dayDeltas = {
+            "D": 0
+        };
+        var ret = null;
+        if (ASPxClientUtils.IsExists(value)) {
+            var text = value.replace(/ /g, "");
+            text = text.toUpperCase();
+            for (var day in dayDeltas) {
+                if (text.substr(0, day.length) == day) {
+                    text = text.substr(day.length);
+
+                    var dayCount = parseInt(text);
+                    if (isNaN(dayCount))
+                        dayCount = 0;
+                    var dateResult = new Date();
+                    if (day != "NOW")
+                        dateResult.setHours(0, 0, 0, 0);
+                    dateResult.setDate(dateResult.getDate() + dayCount + dayDeltas[day])
+                    if (!isNaN(dateResult))
+                        ret = dateResult;
+                }
+            }
+            try {
+                if (text.match(/^[0-9]+$/) != null && text.length == 6) {
+                    var str;
+                    str = text.substring(2, 4) + '/' + text.substring(0, 2) + '/20' + text.substring(4, 6);
+                    return new Date(str);
+                }
+            } catch (err) { }
+        }
+        return ret;
+    }
+
+    function OnValidaData(editor, args) {
+        var date = ValidaData(args.value);
+        if (date != null) {
+            args.date = date;
+            args.handled = true;
+        }
+    }
+
+</script>
+
+<script id="dxss_1627246054" type="text/javascript">
+<!--
+(function(){var a = ({'currency':'€','shortDate':'dd/MM/yyyy','abbrMonthNames':['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic',''],'numNegInf':'-Infinito','currGroupSeparator':'.','am':'','currPosPattern':2,'longDate':'dddd d MMMM yyyy','genMonthNames':['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre',''],'numNan':'Non un numero','numPosInf':'+Infinito','abbrDayNames':['dom','lun','mar','mer','gio','ven','sab'],'numDecimalPoint':',','currNegPattern':9,'monthNames':['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre',''],'monthDay':'d MMMM','shortTime':'HH:mm','pm':'','numGroupSeparator':'.','longTime':'HH:mm:ss','currDecimalPoint':',','percentPattern':1,'dayNames':['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato']});for(var b in a) ASPx.CultureInfo[b] = a[b];})();
+//-->
+</script><table id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_LP" class="dxeLoadingPanel dxlpLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+					<tr>
+						<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_TL">Loading&hellip;</span></td>
+					</tr>
+				</table><table class="dxeButtonEditSys dxeButtonEdit" cellspacing="1" cellpadding="0" id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData" border="0" style="height:20px;width:110px;display:inline-block;vertical-align:middle;">
+					<tr>
+						<td class="dxic" onmousedown="return ASPx.DDMC_MD(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData&#39;, event)" style="width:100%;"><input class="dxeEditArea dxeEditAreaSys" id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_I" name="ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_dtpData$txtData" onfocus="ASPx.EGotFocus(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData&#39;)" onblur="ASPx.ELostFocus(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData&#39;)" onchange="ASPx.ETextChanged(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData&#39;)" type="text" /></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_B-1" class="dxeButton dxeButtonEditButton" onmousedown="return ASPx.DDDropDown(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData&#39;, event)" style="-webkit-user-select:none;"><img id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_B-1Img" class="dxEditors_edtDropDown" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="v" /></td>
+					</tr>
+				</table><div id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_PW-1" class="dxpcDropDown dxpclW dxpc-ddSys" style="width:0px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+					<div class="dxpc-mainDiv dxpc-shadow">
+						<div class="dxpc-contentWrapper">
+							<div class="dxpc-content">
+								<table border="0" style="display:none;">
+									<tr>
+										<td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_D" class="dxeCalendarDay"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_DS" class="dxeCalendarSelected"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_DA" class="dxeCalendarOtherMonth"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_DW" class="dxeCalendarWeekend"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_DO" class="dxeCalendarOutOfRange"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_DDD" class="dxeCalendarDayDisabled"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_DT" class="dxeCalendarToday"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_DD" class="dxeDisabled"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_FNM" class="dxeCalendarFastNavMonth"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_FNMS" class="dxeCalendarFastNavMonthSelected"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_FNY" class="dxeCalendarFastNavYear"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_EC_FNYS" class="dxeCalendarFastNavYearSelected"></td>
+									</tr>
+								</table><table class="dxeCalendar" cellspacing="0" cellpadding="0" id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C" border="0" style="border-collapse:collapse;">
+									<tr>
+										<td valign="top"><table cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+											<tr>
+												<td class="dxeCalendarHeader" style="border-top:0;"><table cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+													<tr>
+														<td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_PYC" class="dxe" onclick="ASPx.CalShiftMonth(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C&#39;, -12);"><img id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_PYCImg" class="dxEditors_edtCalendarPrevYear" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="&lt;&lt;" /></td><td class="dxeCHS"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_PMC" class="dxe" onclick="ASPx.CalShiftMonth(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C&#39;, -1);"><img id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_PMCImg" class="dxEditors_edtCalendarPrevMonth" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="&lt;" /></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_TC" class="dxe" style="width:100%;cursor:default;"><span id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_T" onclick="ASPx.CalTitleClick(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C&#39;, 0, 0)" style="cursor:pointer;">settembre 2016</span></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_NMC" class="dxe" onclick="ASPx.CalShiftMonth(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C&#39;, 1);"><img id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_NMCImg" class="dxEditors_edtCalendarNextMonth" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt=">" /></td><td class="dxeCHS"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_NYC" class="dxe" onclick="ASPx.CalShiftMonth(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C&#39;, 12);"><img id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_NYCImg" class="dxEditors_edtCalendarNextYear" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt=">>" /></td>
+													</tr>
+												</table></td>
+											</tr><tr>
+												<td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_mc" class="dxMonthGridWithWeekNumbers" style="-webkit-user-select:none;"><table id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_mt" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+													<tr align="center">
+														<td></td><td class="dxeCalendarDayHeader">lun</td><td class="dxeCalendarDayHeader">mar</td><td class="dxeCalendarDayHeader">mer</td><td class="dxeCalendarDayHeader">gio</td><td class="dxeCalendarDayHeader">ven</td><td class="dxeCalendarDayHeader">sab</td><td class="dxeCalendarDayHeader">dom</td>
+													</tr><tr>
+														<td class="dxeCalendarWeekNumber">35</td><td class="dxeCalendarDay dxeCalendarOtherMonth">29</td><td class="dxeCalendarDay dxeCalendarOtherMonth">30</td><td class="dxeCalendarDay dxeCalendarOtherMonth">31</td><td class="dxeCalendarDay">1</td><td class="dxeCalendarDay">2</td><td class="dxeCalendarDay dxeCalendarWeekend">3</td><td class="dxeCalendarDay dxeCalendarWeekend">4</td>
+													</tr><tr>
+														<td class="dxeCalendarWeekNumber">36</td><td class="dxeCalendarDay">5</td><td class="dxeCalendarDay">6</td><td class="dxeCalendarDay">7</td><td class="dxeCalendarDay">8</td><td class="dxeCalendarDay">9</td><td class="dxeCalendarDay dxeCalendarWeekend">10</td><td class="dxeCalendarDay dxeCalendarWeekend">11</td>
+													</tr><tr>
+														<td class="dxeCalendarWeekNumber">37</td><td class="dxeCalendarDay">12</td><td class="dxeCalendarDay">13</td><td class="dxeCalendarDay">14</td><td class="dxeCalendarDay">15</td><td class="dxeCalendarDay">16</td><td class="dxeCalendarDay dxeCalendarWeekend">17</td><td class="dxeCalendarDay dxeCalendarWeekend">18</td>
+													</tr><tr>
+														<td class="dxeCalendarWeekNumber">38</td><td class="dxeCalendarDay">19</td><td class="dxeCalendarDay">20</td><td class="dxeCalendarDay">21</td><td class="dxeCalendarDay">22</td><td class="dxeCalendarDay">23</td><td class="dxeCalendarDay dxeCalendarWeekend dxeCalendarToday">24</td><td class="dxeCalendarDay dxeCalendarWeekend">25</td>
+													</tr><tr>
+														<td class="dxeCalendarWeekNumber">39</td><td class="dxeCalendarDay">26</td><td class="dxeCalendarDay">27</td><td class="dxeCalendarDay">28</td><td class="dxeCalendarDay">29</td><td class="dxeCalendarDay">30</td><td class="dxeCalendarDay dxeCalendarWeekend dxeCalendarOtherMonth">1</td><td class="dxeCalendarDay dxeCalendarWeekend dxeCalendarOtherMonth">2</td>
+													</tr><tr>
+														<td class="dxeCalendarWeekNumber">40</td><td class="dxeCalendarDay dxeCalendarOtherMonth">3</td><td class="dxeCalendarDay dxeCalendarOtherMonth">4</td><td class="dxeCalendarDay dxeCalendarOtherMonth">5</td><td class="dxeCalendarDay dxeCalendarOtherMonth">6</td><td class="dxeCalendarDay dxeCalendarOtherMonth">7</td><td class="dxeCalendarDay dxeCalendarWeekend dxeCalendarOtherMonth">8</td><td class="dxeCalendarDay dxeCalendarWeekend dxeCalendarOtherMonth">9</td>
+													</tr>
+												</table></td>
+											</tr>
+										</table></td>
+									</tr><tr>
+										<td class="dxeCalendarFooter" align="center"><table cellpadding="0" border="0" style="border-collapse:collapse;">
+											<tr>
+												<td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_BT" class="dxeCalendarButton" onclick="ASPx.CalTodayClick(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C&#39;);">Oggi</td><td class="dxeCFS"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_BC" class="dxeCalendarButton" onclick="ASPx.CalClearClick(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C&#39;);">Pulisci</td>
+											</tr>
+										</table></td>
+									</tr>
+								</table><div id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_FNP_PW-1" class="dxpcDropDown dxpclW dxpc-ddSys" style="width:0px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+									<div class="dxpc-mainDiv dxpc-shadow">
+										<div class="dxpc-contentWrapper">
+											<div class="dxpc-content">
+												<div class="dxeCalendarFastNav">
+													<div class="dxeCalendarFastNavMonthArea">
+														<table id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_FNP_m" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+															<tr>
+																<td class="dxeCalendarFastNavMonth">Gen</td><td class="dxeCalendarFastNavMonth">Feb</td><td class="dxeCalendarFastNavMonth">Mar</td><td class="dxeCalendarFastNavMonth">Apr</td>
+															</tr><tr>
+																<td class="dxeCalendarFastNavMonth">Mag</td><td class="dxeCalendarFastNavMonth">Giu</td><td class="dxeCalendarFastNavMonth">Lug</td><td class="dxeCalendarFastNavMonth">Ago</td>
+															</tr><tr>
+																<td class="dxeCalendarFastNavMonth">Set</td><td class="dxeCalendarFastNavMonth">Ott</td><td class="dxeCalendarFastNavMonth">Nov</td><td class="dxeCalendarFastNavMonth">Dic</td>
+															</tr>
+														</table>
+													</div><div class="dxeCalendarFastNavYearArea">
+														<table id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_FNP_y" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+															<tr>
+																<td onclick="ASPx.CalFNYShuffle(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C&#39;, -10)" rowspan="2" style="cursor:pointer;"><img class="dxEditors_edtCalendarFNPrevYear" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="&lt;" /></td><td class="dxeCalendarFastNavYear"></td><td class="dxeCalendarFastNavYear"></td><td class="dxeCalendarFastNavYear"></td><td class="dxeCalendarFastNavYear"></td><td class="dxeCalendarFastNavYear"></td><td onclick="ASPx.CalFNYShuffle(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C&#39;, 10)" rowspan="2" style="cursor:pointer;"><img class="dxEditors_edtCalendarFNNextYear" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt=">" /></td>
+															</tr><tr>
+																<td class="dxeCalendarFastNavYear"></td><td class="dxeCalendarFastNavYear"></td><td class="dxeCalendarFastNavYear"></td><td class="dxeCalendarFastNavYear"></td><td class="dxeCalendarFastNavYear"></td>
+															</tr>
+														</table>
+													</div>
+												</div><div class="dxeCalendarFastNavFooter" align="center">
+													<table cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;">
+														<tr>
+															<td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_FNP_BO" class="dxeCalendarButton" onclick="ASPx.CalFNBClick(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C&#39;, &#39;ok&#39;)">OK</td><td class="dxeCFNFS"></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_FNP_BC" class="dxeCalendarButton" onclick="ASPx.CalFNBClick(&#39;ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C&#39;, &#39;cancel&#39;)">Cancel</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><script id="dxss_2051466728" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_FNP',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_FNP');
+dxo.InitGlobalVariable('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C_FNP');
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_dtpData$txtData$DDD$C$FNP';
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.popupAnimationType='fade';
+dxo.AfterCreate();
+
+//-->
+</script><script id="dxss_1652178121" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C',[[['dxeCalendarButtonHover'],[''],['BT','BC','BO','BCN','FNP_BO','FNP_BC']],[['dxeCalendarFastNavMonthHover'],[''],['FNP_M0','FNP_M1','FNP_M2','FNP_M3','FNP_M4','FNP_M5','FNP_M6','FNP_M7','FNP_M8','FNP_M9','FNP_M10','FNP_M11']],[['dxeCalendarFastNavYearHover'],[''],['FNP_Y0','FNP_Y1','FNP_Y2','FNP_Y3','FNP_Y4','FNP_Y5','FNP_Y6','FNP_Y7','FNP_Y8','FNP_Y9']]]);
+ASPx.AddPressedItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C',[[['dxeCalendarButtonPressed'],[''],['BT','BC','BO','BCN','FNP_BO','FNP_BC']]]);
+ASPx.AddDisabledItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C',[[['dxeDisabled'],[''],['']],[['dxeDisabled dxeButtonDisabled'],[''],['BT','BC','BO','BCN','FNP_BO','FNP_BC']],[[''],[''],['PYC','PMC','NMC','NYC'],,[[{'spriteCssClass':'dxEditors_edtCalendarPrevYearDisabled'}],[{'spriteCssClass':'dxEditors_edtCalendarPrevMonthDisabled'}],[{'spriteCssClass':'dxEditors_edtCalendarNextMonthDisabled'}],[{'spriteCssClass':'dxEditors_edtCalendarNextYearDisabled'}]],['Img']]]);
+
+var dxo = new ASPxClientCalendar('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C');
+dxo.InitGlobalVariable('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD_C');
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_dtpData$txtData$DDD$C';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.serverCurrentDate=new Date(2016,8,24);
+dxo.visibleDate = new Date(2016,8,24);
+dxo.firstDayOfWeek = 1;
+dxo.isDateEditCalendar = true;
+dxo.AfterCreate();
+
+//-->
+</script>
+							</div>
+						</div>
+					</div>
+				</div><script id="dxss_1822275387" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD');
+dxo.InitGlobalVariable('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_DDD');
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_dtpData$txtData$DDD';
+dxo.Shown.AddHandler(function (s, e) { ASPx.DDBPCShown('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.popupAnimationType='slide';
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.AfterCreate();
+
+//-->
+</script><script id="dxss_1761561347" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData',[[['dxeButtonEditButtonHover'],[''],['B-1']]]);
+ASPx.RemoveHoverItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData',[[['B-100']]]);
+ASPx.AddPressedItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData',[[['dxeButtonEditButtonPressed'],[''],['B-1']]]);
+ASPx.RemovePressedItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData',[[['B-100']]]);
+ASPx.AddDisabledItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+ASPx.RemoveDisabledItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData',[[['B-100'],]]);
+document.getElementById("ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientDateEdit('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData');
+dxo.InitGlobalVariable('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData');
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_dtpData$txtData',arg,ASPx.Callback,'ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_dtpData_txtData',ASPx.CallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_dtpData$txtData';
+dxo.ParseDate.AddHandler(function (s, e){OnValidaData(s, e);});
+dxo.stateObject = ({'rawValue':'N'});
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.outOfRangeWarningClassName='dxeOutOfRWarn dxeOutOfRWarnRight';
+dxo.outOfRangeWarningMessages=['The date must be in the range {0}...{1}', 'The date must be greater than or equal to {0}', 'The date must be less than or equal to {0}'];
+dxo.dateFormatter = ASPx.DateFormatter.Create('dd/MM/yyyy');
+dxo.AfterCreate();
+
+//-->
+</script>
+
+
+                            Estremi certificato
+                            <input name="ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_txtCertificato" type="text" id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_txtCertificato" style="width:200px;" />
+                        </td>
+                    </tr>
+                    <tr id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_rowFileUpload">
+					<td style="width: 169px">Allega file
+                        </td>
+					<td>
+                            <table class="dxucControl" cellspacing="0" cellpadding="0" id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload" border="0" style="width:400px;border-collapse:collapse;">
+						<tr>
+							<td style="width:100%;vertical-align:top;"><table id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_UploadInputs" class="dxucInputs" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+								<tr id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_FIT" style="display:none;">
+									<td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_TextBoxT" class="dxTB dxucTextBox" align="left" style="width:100%;border-right-width:0px;"><input id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_TextBoxT_Input" class="dxTI" type="file" name="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_TextBoxT_Input" style="position:absolute;filter:alpha(opacity=0);opacity:0;top:-5000px;z-index:29999;" /><input id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_TextBoxT_FakeInput" class="dxTF dxucEditArea" type="text" readonly="readonly" tabindex="-1" style="background-color:Transparent;border-width:0px;width:100%;" /></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_ClearBoxT" class="dxCB dxucTextBox" style="border-left-width:0px;border-right-width:0px;"><a href="javascript:;" style="visibility:hidden;"><img id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_ClearBoxTImg" title="Clear selection" class="dxWeb_ucClearButton" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="Clear selection" style="display:inline;" /></a></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_BrowseT" class="dxBB dxucBrowseButton"><a tabindex="-1" href="javascript:;">Sfoglia</a></td>
+								</tr><tr id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_ErrRRT" style="display:none;">
+									<td class="dxucErrorCell" colspan="3"></td>
+								</tr><tr class="dxucSR" style="display:none;">
+									<td colspan="3" style="font:0;height:2px;"></td>
+								</tr><tr id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_FI0">
+									<td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_TextBox0" class="dxTB dxucTextBox" align="left" style="width:100%;border-right-width:0px;"><input id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_TextBox0_Input" class="dxTI" type="file" name="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_TextBox0_Input" style="position:absolute;filter:alpha(opacity=0);opacity:0;top:-5000px;z-index:29999;" /><input id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_TextBox0_FakeInput" class="dxTF dxucEditArea" type="text" readonly="readonly" tabindex="-1" style="background-color:Transparent;border-width:0px;width:100%;" /></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_ClearBox0" class="dxCB dxucTextBox" style="border-left-width:0px;border-right-width:0px;"><a href="javascript:;" style="visibility:hidden;"><img id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_ClearBox0Img" title="Clear selection" class="dxWeb_ucClearButton" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="Clear selection" style="display:inline;" /></a></td><td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_Browse0" class="dxBB dxucBrowseButton"><a tabindex="-1" href="javascript:;">Sfoglia</a></td>
+								</tr><tr id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_ErrR0" style="display:none;">
+									<td class="dxucErrorCell" colspan="3"></td>
+								</tr>
+							</table><table id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_ProgressPanel" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;display:none;">
+								<tr>
+									<td style="vertical-align:middle;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+										<tr>
+											<td><table class="dxucProgressBar" cellspacing="0" cellpadding="0" id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_UCProgress" border="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+												<tr>
+													<td class="dxPBMainCell" align="left"><div id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_UCProgress_DI" class="dxucProgressBarIndicator" style="width:0%;">
+
+													</div><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;margin-top:0px;">
+														<tr>
+															<td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_UCProgress_VIC" class="dx" style="text-align:Center;vertical-align:Middle;">0%</td>
+														</tr>
+													</table></td>
+												</tr>
+											</table><script id="dxss_229251864" type="text/javascript">
+<!--
+ASPx.AddDisabledItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_UCProgress',[[[''],[''],['VIC']]]);
+
+var dxo = new ASPxClientProgressBarBase('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_UCProgress');
+dxo.InitGlobalVariable('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_UCProgress');
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_fileUpload$UCProgress';
+dxo.minimum = 0;
+dxo.maximum = 100;
+dxo.position = 0;
+dxo.displayMode = 0;
+dxo.displayFormat='{0:0.##}';
+dxo.hasOwner = false;
+dxo.AfterCreate();
+
+//-->
+</script></td>
+										</tr><tr>
+											<td style="font:0;height:13px;"></td>
+										</tr><tr>
+											<td align="center"><table cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;">
+												<tr>
+													<td id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_Cancel" class="dxucButton"><a href="javascript:;">Cancel</a></td>
+												</tr>
+											</table></td>
+										</tr>
+									</table></td>
+								</tr>
+							</table><div id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_CErr" class="dxucErrorCell" style="padding-top:13px;display:none;">
+								Common error text is displayed here
+							</div></td>
+						</tr>
+					</table><iframe id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_UploadIframe" src="" scrolling="no" frameborder="0" title="No user content" name="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload_UploadIframe" style="position:absolute;display:none;z-index:100000;filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=0);">
+
+					</iframe><script id="dxss_1472401229" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload',[[['dxucBrowseButtonHover'],[''],['Browse0']]]);
+ASPx.AddPressedItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload',[[['dxucBrowseButtonPressed'],[''],['Browse0']]]);
+ASPx.AddDisabledItems('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload',[[['dxucDisabled dxucButtonDisabled'],[''],['Add','Upload','Cancel','Remove0']],[['dxucDisabled dxucTextBoxDisabled'],[''],['TextBox0'],['','_FakeInput']],[['dxucDisabled dxucTextBoxDisabled'],[''],['ClearBox0'],,[[{'spriteCssClass':'dxWeb_ucClearButtonDisabled'}]],['Img']],[['dxucDisabled dxucBrowseButtonDisabled'],[''],['Browse0']]]);
+
+var dxo = new ASPxClientUploadControl('ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload');
+dxo.InitGlobalVariable('popupGiustificazione_fileUpload');
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_fileUpload';
+dxo.stateObject = ({'inputCount':1});
+dxo.fileInputSpacing = '2px';
+dxo.generalErrorText = 'File upload failed due to an external error';
+dxo.unspecifiedErrorText = 'The server encountered an internal unspecified error that prevented it from fulfilling the request.';
+dxo.uploadWasCanceledErrorText = 'File upload was canceled.';
+dxo.selectedSeveralFilesText = '{0} files are selected for upload';
+dxo.validationSettings = ({'invalidWindowsFileNameErrorText':'The file name contains invalid characters.'});
+dxo.progressHandlerPage = '/scuolawebfamiglie/ASPxUploadProgressHandlerPage.ashx';
+dxo.uploadingKey = 'ecfda49a02334ad18e54068795537d49';
+dxo.uploadProcessingEnabled = true;
+dxo.settingsID = 'ddfa05d1682b4b8c9f3520630e13001c';
+dxo.signature = 'S91Ot1il+w+NY1eyQABKwCSzash5027TyiNGEY5oeY4=';
+dxo.templateDisabledTextBoxItem = ({'imageUrls':[''],'element':'TextBoxT','imagePostfixes':[''],'name':'ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload','className':['dxucDisabled dxucTextBoxDisabled'],'cssText':[''],'postfixes':['','_FakeInput']});
+dxo.templateDisabledClearBoxItem = ({'element':'ClearBoxT','imagePostfixes':['Img'],'imageObjs':[{'spriteCssClass':'dxWeb_ucClearButtonDisabled'}],'name':'ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload','className':['dxucDisabled dxucTextBoxDisabled'],'cssText':[''],'postfixes':['']});
+dxo.templateHoveredBrowseItem = ({'element':'BrowseT','imagePostfixes':['Img'],'imageObjs':[null],'name':'ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload','className':['dxucBrowseButtonHover'],'cssText':[''],'postfixes':['']});
+dxo.templatePressedBrowseItem = ({'element':'BrowseT','imagePostfixes':['Img'],'imageObjs':[null],'name':'ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload','className':['dxucBrowseButtonPressed'],'cssText':[''],'postfixes':['']});
+dxo.templateDisabledBrowseItem = ({'element':'BrowseT','imagePostfixes':['Img'],'imageObjs':[null],'name':'ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload','className':['dxucDisabled dxucBrowseButtonDisabled'],'cssText':[''],'postfixes':['']});
+dxo.templateDisabledRemoveItem = ({'element':'RemoveT','imagePostfixes':['Img'],'imageObjs':[null],'name':'ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_fileUpload','className':['dxucDisabled dxucButtonDisabled'],'cssText':[''],'postfixes':['']});
+dxo.AfterCreate();
+
+//-->
+</script>
+                        </td>
+				</tr>
+				
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_btnSalva" value="Salva" id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_btnSalva" />
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$popupGiustificazione$popupGiustificazione_btnAnnulla" value="Annulla" onclick="popupGiustificazione.Hide();return false;" id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_btnAnnulla" />
+                            <br />
+                            <span id="ctl00_ContentPlaceHolder1_popupGiustificazione_popupGiustificazione_lblInfo"></span>
+                        </td>
+                    </tr>
+                </table>
+            
+			</div>
+		</div>
+	</div>
+</div><div id="ctl00_ContentPlaceHolder1_popupGiustificazione_DXPWMB-1" class="dxpcModalBackLite" style="z-index:9999;">
+
+</div><table id="ctl00_ContentPlaceHolder1_popupGiustificazione_LP" class="dxpcLoadingPanel dxlpLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tr>
+		<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_ContentPlaceHolder1_popupGiustificazione_TL">Loading&hellip;</span></td>
+	</tr>
+</table><div id="ctl00_ContentPlaceHolder1_popupGiustificazione_LD" class="dxpcLoadingDiv dxlpLoadingDiv dx-ft" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_880614125" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_ContentPlaceHolder1_popupGiustificazione',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_ContentPlaceHolder1_popupGiustificazione');
+dxo.InitGlobalVariable('popupGiustificazione');
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$popupGiustificazione',arg,ASPx.Callback,'ctl00_ContentPlaceHolder1_popupGiustificazione',ASPx.CallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$popupGiustificazione';
+dxo.popupAnimationType='fade';
+dxo.popupHorizontalAlign='WindowCenter';
+dxo.popupVerticalAlign='WindowCenter';
+dxo.allowDragging=true;
+dxo.AfterCreate();
+
+//-->
+</script>
+
+
+        <br />
+        <div>
+	
+    <div id="ctl00_pnlFooter_divFooter" style="text-align: center; position: fixed; left: 0px; bottom: 0px; height: 18px; width: 100%; background: White; color: Black;">
+        <table id="ctl00_pnlFooter_tblFooter" width="100%" style="padding: 0; margin: 0; height: 18px;">
+		<tr>
+			<td align="left">
+                    
+                </td>
+			<td align="left" width="220px">
+                    
+                </td>
+			<td id="ctl00_pnlFooter_tdMpFooter1" align="center">
+                    <div style="font-size: 10px; font-style: italic; font-weight: bold; vertical-align: top; font-family: Verdana;">
+                        Studio Filippo Albertini - Cattolica (RN) ©
+                        <span id="ctl00_pnlFooter_lblAnniCopyright">2011-2016</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="ctl00_pnlFooter_lblVersione">Portale ver. 1.8.6108 del 21/09/2016</span>
+                    </div>
+                </td>
+			<td id="ctl00_pnlFooter_tdMpFooter2" align="right" width="220px">
+                    <div style="font-size: 10px; font-style: italic; font-weight: bold; vertical-align: top; font-family: Verdana;">
+                        <span id="ctl00_pnlFooter_lblInfo">00692&nbsp;&nbsp;&nbsp;24/09/2016&nbsp;&nbsp;&nbsp;05</span>&nbsp;&nbsp;
+                    </div>
+                </td>
+		</tr>
+	</table>
+	
+    </div>
+    <script id="dxss_924790085" type="text/javascript">
+<!--
+ASPx.AccessibilitySR.AccessibilityIFrameTitle = 'No user content';
+//-->
+</script><div id="ctl00_pnlFooter_popupShowError_PW-1" class="dxpcLite dxpclW" style="width:650px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+		<div class="dxpc-mainDiv dxpc-shadow">
+			<div class="dxpc-header dxpc-withBtn" style="cursor:move;-webkit-user-select:none;">
+				<div class="dxpc-closeBtn">
+					<img class="dxWeb_pcCloseButton" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="[Close]" />
+				</div><div class="dxpc-headerContent">
+					<span class="dxpc-headerText dx-vam">Anomalie nell&#39;esecuzione</span>
+				</div><b class="dx-clear"></b>
+			</div><div class="dxpc-contentWrapper">
+				<div class="dxpc-content">
+					
+                <center><b>Errori riscontrati nell'esecuzione:</b></center>
+                <br />
+                <div id="ctl00_pnlFooter_popupShowError_Panel1" style="height:260px;width:620px;overflow-x:scroll;">
+						
+                    <select size="15" name="ctl00$pnlFooter$popupShowError$lstErrors" id="ctl00_pnlFooter_popupShowError_lstErrors">
+
+						</select>
+                
+					</div>
+            
+				</div>
+			</div>
+		</div>
+	</div><iframe id="ctl00_pnlFooter_popupShowError_DXPWIF-1" src="javascript:false" scrolling="no" frameborder="0" title="No user content" style="position:absolute;display:none;z-index:9999;filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=0);">
+
+	</iframe><div id="ctl00_pnlFooter_popupShowError_DXPWMB-1" class="dxpcModalBackLite" style="z-index:9999;">
+
+	</div><table id="ctl00_pnlFooter_popupShowError_LP" class="dxpcLoadingPanel dxlpLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+		<tr>
+			<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_pnlFooter_popupShowError_TL">Loading&hellip;</span></td>
+		</tr>
+	</table><div id="ctl00_pnlFooter_popupShowError_LD" class="dxpcLoadingDiv dxlpLoadingDiv dx-ft" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+	</div><script id="dxss_1849164504" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_pnlFooter_popupShowError',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_pnlFooter_popupShowError');
+dxo.InitGlobalVariable('popupShowError');
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$pnlFooter$popupShowError',arg,ASPx.Callback,'ctl00_pnlFooter_popupShowError',ASPx.CallbackError,true); };
+dxo.uniqueID = 'ctl00$pnlFooter$popupShowError';
+dxo.renderIFrameForPopupElements = true;
+dxo.popupAnimationType='fade';
+dxo.popupHorizontalAlign='WindowCenter';
+dxo.popupVerticalAlign='WindowCenter';
+dxo.allowDragging=true;
+dxo.width=650;
+dxo.widthFromServer=true;
+dxo.AfterCreate();
+
+//-->
+</script>
+    <div id="ctl00_pnlFooter_popupShowMsg_PW-1" class="dxpcLite dxpclW" style="width:600px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+		<div class="dxpc-mainDiv dxpc-shadow">
+			<div class="dxpc-header dxpc-withBtn" style="cursor:move;-webkit-user-select:none;">
+				<div class="dxpc-closeBtn">
+					<img class="dxWeb_pcCloseButton" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="[Close]" />
+				</div><div class="dxpc-headerContent">
+					<span class="dxpc-headerText dx-vam">MsgBox</span>
+				</div><b class="dx-clear"></b>
+			</div><div class="dxpc-contentWrapper">
+				<div class="dxpc-content">
+					
+                <div>
+                    <span id="ctl00_pnlFooter_popupShowMsg_popupShowMsg_lblTesto"></span>
+                    <br />
+                    <center>
+                        <input type="submit" name="ctl00$pnlFooter$popupShowMsg$popupShowMsg_btnOk" value="Ok" id="ctl00_pnlFooter_popupShowMsg_popupShowMsg_btnOk" style="width:90px;" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="submit" name="ctl00$pnlFooter$popupShowMsg$popupShowMsg_btnAnnulla" value="Annulla" id="ctl00_pnlFooter_popupShowMsg_popupShowMsg_btnAnnulla" style="width:90px;" />
+                    </center>
+                </div>
+            
+				</div>
+			</div>
+		</div>
+	</div><div id="ctl00_pnlFooter_popupShowMsg_DXPWMB-1" class="dxpcModalBackLite" style="z-index:9999;">
+
+	</div><table id="ctl00_pnlFooter_popupShowMsg_LP" class="dxpcLoadingPanel dxlpLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+		<tr>
+			<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/scuolawebfamiglie/DXR.axd?r=1_37-v2VAc" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_pnlFooter_popupShowMsg_TL">Loading&hellip;</span></td>
+		</tr>
+	</table><div id="ctl00_pnlFooter_popupShowMsg_LD" class="dxpcLoadingDiv dxlpLoadingDiv dx-ft" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+	</div><script id="dxss_703295521" type="text/javascript">
+<!--
+ASPx.AddHoverItems('ctl00_pnlFooter_popupShowMsg',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_pnlFooter_popupShowMsg');
+dxo.InitGlobalVariable('popupShowMsg');
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$pnlFooter$popupShowMsg',arg,ASPx.Callback,'ctl00_pnlFooter_popupShowMsg',ASPx.CallbackError,true); };
+dxo.uniqueID = 'ctl00$pnlFooter$popupShowMsg';
+dxo.popupAnimationType='fade';
+dxo.popupHorizontalAlign='WindowCenter';
+dxo.popupVerticalAlign='WindowCenter';
+dxo.allowDragging=true;
+dxo.width=600;
+dxo.widthFromServer=true;
+dxo.AfterCreate();
+
+//-->
+</script>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-19256951-14']);
+    _gaq.push(['_setCustomVar', 1, 'Scuola', 'FOTF010008', 3]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+    <iframe id="fileIframe" height="0" width="0" frameborder="0"></iframe>
+    <script language='javascript'>
+        function OnDxInitialized(s, e) {
+            if (popupShowError.cp_showfile && e.isCallback == false) {
+                fileIframe = document.getElementById('fileIframe');
+                if (fileIframe) {
+                    fileIframe.src = "FMpFiles_Download.aspx";
+                    delete popupShowError.cp_showfile;
+                }
+            }
+        }
+        function SendFileToClient() {
+            var btn = document.getElementById('ctl00_pnlFooter_btnSendFileToClient');
+            btn.click();
+        }
+    </script>
+    <script id="dxss_122137278" type="text/javascript">
+<!--
+var dxo = ASPx.GetGlobalEvents();
+dxo.ControlsInitialized.AddHandler(OnDxInitialized);
+
+//-->
+</script>
+    <input type="submit" name="ctl00$pnlFooter$btnSendFileToClient" value="Send file" id="ctl00_pnlFooter_btnSendFileToClient" style="visibility: hidden" />
+
+</div>
+
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AEA2F852" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_pnlHeader_mnuHor_Data = new Object();
+ctl00_pnlHeader_mnuHor_Data.disappearAfter = 500;
+ctl00_pnlHeader_mnuHor_Data.horizontalOffset = 2;
+ctl00_pnlHeader_mnuHor_Data.verticalOffset = 0;
+ctl00_pnlHeader_mnuHor_Data.hoverClass = 'ctl00_pnlHeader_mnuHor_13';
+ctl00_pnlHeader_mnuHor_Data.hoverHyperLinkClass = 'ctl00_pnlHeader_mnuHor_12';
+ctl00_pnlHeader_mnuHor_Data.staticHoverClass = 'ctl00_pnlHeader_mnuHor_11';
+ctl00_pnlHeader_mnuHor_Data.staticHoverHyperLinkClass = 'ctl00_pnlHeader_mnuHor_10';
+ctl00_pnlHeader_mnuHor_Data.iframeUrl = '/scuolawebfamiglie/WebResource.axd?d=I71C3_aP-oy2aDdB4xjX24GZqShwDOUzeFVDRIBV-4JdpG_CUexKfhrwKfcnZqnbkh7CQGiIMb8XdUOVnWrD4NgBD4athEDadv1fEtjOfKg1&t=635875548900000000';
+
+var callBackFrameUrl='/scuolawebfamiglie/WebResource.axd?d=I71C3_aP-oy2aDdB4xjX24GZqShwDOUzeFVDRIBV-4JdpG_CUexKfhrwKfcnZqnbkh7CQGiIMb8XdUOVnWrD4NgBD4athEDadv1fEtjOfKg1&t=635875548900000000';
+WebForm_InitCallback();//]]>
+</script>
+</form>
+</body>
+</html>
