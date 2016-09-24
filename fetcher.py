@@ -50,7 +50,7 @@ class Fetcher:
     def students(schoolcode, user, password, droplistitem):
 
         #url = "https://www.scuolawebromagna.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
-	url = "https://registro.itis-cesena.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
+        url = "https://registro.itis-cesena.it/scuolawebfamiglie/src/login.aspx?Scuola=" + schoolcode
         urlhomeworkspage = "https://registro.itis-cesena.it/scuolawebfamiglie/src/FMp05.aspx"
 
         #   effettua il login, apre la pagina Studenti->Visualizza, visualizza i compiti
@@ -70,7 +70,7 @@ class Fetcher:
         browser.select_form(name="aspnetForm")
         #   va nel menu a tendina e sceglie Compiti assegnati
         #browser.form["ctl00$ContentPlaceHolder1$lstArchivio"] = [droplistitem]
-	browser.form["ctl00$ContentPlaceHolder1$lstGruppo"] = [droplistitem]
+        browser.form["ctl00$ContentPlaceHolder1$lstGruppo"] = [droplistitem]
         #   preme il pulsante Visualizza
         page = browser.submit(name="ctl00$ContentPlaceHolder1$btnVisualizza")
         #   scarica la pagina ottenuta
